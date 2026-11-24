@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dom Navalha Barbearia · Praia da Costa, Vila Velha</title>
+  <meta name="description" content="Barbearia na Praia da Costa, Vila Velha (ES). Corte, barba na navalha, pigmentação e clube de assinatura. Agende seu horário online em menos de um minuto e confirme pelo WhatsApp.">
+  <meta name="theme-color" content="#1C1714">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular" href="#agendar">Pular para o agendamento</a>
+
+  <header class="topo" id="topo">
+    <div class="topo__in">
+      <a class="marca" href="#inicio" aria-label="Dom Navalha Barbearia — início">
+        <span class="marca__poste" aria-hidden="true"></span>
+        <span class="marca__nome">Dom Navalha<small>Barbearia · desde 2012</small></span>
+      </a>
+      <nav class="menu" aria-label="Seções">
+        <a href="#servicos">Serviços</a>
+        <a href="#clube">Clube</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="btn btn--mini" href="#agendar">Agendar</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="hero__poste" aria-hidden="true"></div>
+      <div class="hero__in">
+        <div class="hero__texto">
+          <p class="selo-local"><span class="ponto" aria-hidden="true"></span> Praia da Costa · Vila Velha – ES</p>
+          <h1 id="hero-titulo" class="hero__titulo">
+            <span class="hero__dom">Dom</span>
+            <span class="hero__navalha">Navalha</span>
+          </h1>
+          <p class="hero__slogan">Navalha afiada, papo bom e horário marcado.</p>
+          <p class="hero__sub">Corte, barba na toalha quente e acabamento de respeito. Escolha o serviço, o barbeiro e o horário aqui mesmo — sem fila e sem ficar esperando resposta.</p>
+          <div class="hero__acoes">
+            <a class="btn btn--primario" href="#agendar">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm4 9 2 2 4-4"/></svg>
+              Agendar horário
+            </a>
+            <a class="btn btn--linha" href="#servicos">Ver serviços e preços</a>
+          </div>
+          <ul class="hero__fatos" aria-label="Destaques">
+            <li><strong>1 min</strong> para agendar</li>
+            <li><strong>3</strong> barbeiros na casa</li>
+            <li><strong>Café</strong> passado na hora</li>
+          </ul>
+        </div>
+
+        <div class="hero__arte" aria-hidden="true">
+          <svg class="emblema" viewBox="0 0 320 320">
+            <defs>
+              <path id="circulo" d="M160,160 m-122,0 a122,122 0 1,1 244,0 a122,122 0 1,1 -244,0"/>
+            </defs>
+            <circle cx="160" cy="160" r="156" fill="#1C1714"/>
+            <circle cx="160" cy="160" r="146" fill="none" stroke="#C9973F" stroke-width="2"/>
+            <circle cx="160" cy="160" r="100" fill="none" stroke="#C9973F" stroke-width="1.5" stroke-dasharray="2 6"/>
+            <g class="emblema__giro">
+              <text font-family="'Big Shoulders Display', Impact, sans-serif" font-weight="800" font-size="25" letter-spacing="6.2" fill="#F4ECDF">
+                <textPath href="#circulo">BARBEARIA ✦ VILA VELHA ✦ ES ✦ DESDE 2012 ✦</textPath>
+              </text>
+            </g>
+            <!-- navalha -->
+            <g transform="translate(160 160) rotate(-38)">
+              <rect x="-12" y="-70" width="24" height="86" rx="6" fill="#C9973F"/>
+              <rect x="-8" y="-62" width="16" height="70" rx="4" fill="#A97A2A"/>
+              <circle cx="0" cy="12" r="4.5" fill="#1C1714"/>
+              <path d="M-11 12 L-11 74 C-11 82 -4 86 2 86 L16 86 C18 74 14 34 11 12Z" fill="#E8E1D4"/>
+              <path d="M11 12 C14 34 18 74 16 86 L12 86 C13 70 10 36 7 12Z" fill="#FFFFFF" opacity=".85"/>
+            </g>
+            <!-- tesoura -->
+            <g transform="translate(160 160) rotate(38)">
+              <path d="M-5 -6 L-2 -88 C-1 -92 2 -92 3 -88 L5 -6Z" fill="#E8E1D4"/>
+              <path d="M5 -6 L12 -84 C13 -88 16 -87 16 -83 L13 -4Z" fill="#CFC6B6"/>
+              <circle cx="0" cy="0" r="5" fill="#C9973F"/>
+              <circle cx="-14" cy="34" r="16" fill="none" stroke="#B23A2B" stroke-width="7"/>
+              <circle cx="16" cy="34" r="16" fill="none" stroke="#B23A2B" stroke-width="7"/>
+              <path d="M-6 2 L-10 20 M8 2 L12 20" stroke="#B23A2B" stroke-width="7" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="faixa" aria-hidden="true">
+      <div class="faixa__trilho">
+        <span>Corte</span><i>✦</i><span>Barba na navalha</span><i>✦</i><span>Toalha quente</span><i>✦</i><span>Degradê</span><i>✦</i><span>Pigmentação</span><i>✦</i><span>Cerveja gelada</span><i>✦</i>
+        <span>Corte</span><i>✦</i><span>Barba na navalha</span><i>✦</i><span>Toalha quente</span><i>✦</i><span>Degradê</span><i>✦</i><span>Pigmentação</span><i>✦</i><span>Cerveja gelada</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- SERVIÇOS -->
+    <section class="secao" id="servicos" aria-labelledby="servicos-titulo">
+      <div class="secao__in">
+        <header class="secao__cab">
+          <p class="sobretitulo">Tabela da casa</p>
+          <h2 id="servicos-titulo">Serviços &amp; preços</h2>
+          <p class="secao__intro">Preço fechado, sem surpresa no caixa. Toque em <strong>Agendar</strong> em qualquer serviço e ele já entra no seu agendamento.</p>
+        </header>
+        <ul class="servicos" id="lista-servicos">
+          <!-- preenchido pelo app.js -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO -->
+    <section class="secao secao--agenda" id="agendar" aria-labelledby="agendar-titulo">
+      <div class="secao__in">
+        <header class="secao__cab">
+          <p class="sobretitulo">Agenda online</p>
+          <h2 id="agendar-titulo">Marque seu horário</h2>
+          <p class="secao__intro">Cinco toques e pronto: a confirmação sai direto no WhatsApp da barbearia.</p>
+        </header>
+
+        <div class="agenda" id="agenda">
+          <ol class="passos" id="passos" aria-label="Etapas do agendamento">
+            <li data-passo="1"><span>1</span><em>Serviço</em></li>
+            <li data-passo="2"><span>2</span><em>Barbeiro</em></li>
+            <li data-passo="3"><span>3</span><em>Dia</em></li>
+            <li data-passo="4"><span>4</span><em>Horário</em></li>
+            <li data-passo="5"><span>5</span><em>Confirmar</em></li>
+          </ol>
+
+          <div class="agenda__corpo">
+            <!-- Passo 1 -->
+            <fieldset class="painel" data-painel="1">
+              <legend class="painel__tit">Quais serviços você quer?</legend>
+              <p class="painel__dica">Pode escolher mais de um. O tempo e o valor somam automaticamente.</p>
+              <div class="opcoes opcoes--servicos" id="op-servicos"></div>
+            </fieldset>
+
+            <!-- Passo 2 -->
+            <fieldset class="painel" data-painel="2" hidden>
+              <legend class="painel__tit">Com quem você quer cortar?</legend>
+              <p class="painel__dica">Cada barbeiro tem sua especialidade. Se não tiver preferência, mostramos todos os horários livres da casa.</p>
+              <div class="opcoes opcoes--barbeiros" id="op-barbeiros"></div>
+            </fieldset>
+
+            <!-- Passo 3 -->
+            <fieldset class="painel" data-painel="3" hidden>
+              <legend class="painel__tit">Qual dia fica melhor?</legend>
+              <p class="painel__dica">Atendemos de segunda a sábado. Domingo é dia de descanso.</p>
+              <div class="dias" id="op-dias"></div>
+            </fieldset>
+
+            <!-- Passo 4 -->
+            <fieldset class="painel" data-painel="4" hidden>
+              <legend class="painel__tit">Escolha o horário</legend>
+              <p class="painel__dica" id="dica-horario">Horários calculados pela duração do seu atendimento.</p>
+              <div class="horarios" id="op-horarios"></div>
+              <p class="legenda"><span class="legenda__livre"></span> Livre <span class="legenda__ocupado"></span> Ocupado</p>
+            </fieldset>
+
+            <!-- Passo 5 -->
+            <div class="painel" data-painel="5" hidden>
+              <h3 class="painel__tit">Quase lá! Confira e confirme</h3>
+              <div class="campo">
+                <label for="nome">Seu nome</label>
+                <input id="nome" name="nome" type="text" autocomplete="given-name" placeholder="Como podemos te chamar?" maxlength="40" required aria-describedby="erro-nome">
+                <p class="campo__erro" id="erro-nome" role="alert"></p>
+              </div>
+              <div class="campo">
+                <label for="obs">Observação <span class="opcional">(opcional)</span></label>
+                <input id="obs" name="obs" type="text" placeholder="Ex.: quero manter o comprimento em cima" maxlength="120">
+              </div>
+              <div class="resumo" id="resumo" aria-live="polite"></div>
+            </div>
+
+            <!-- Sucesso -->
+            <div class="painel painel--ok" data-painel="6" hidden>
+              <div class="ok__icone" aria-hidden="true">
+                <svg viewBox="0 0 48 48" width="56" height="56"><circle cx="24" cy="24" r="22" fill="#23443A"/><path d="M14 25l7 7 13-15" fill="none" stroke="#F4ECDF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3 class="painel__tit">Mensagem pronta no WhatsApp!</h3>
+              <p class="painel__dica">É só tocar em <strong>enviar</strong> por lá. A barbearia responde confirmando o seu horário.</p>
+              <p class="ok__resumo" id="ok-resumo"></p>
+              <div class="ok__acoes">
+                <a class="btn btn--zap" id="ok-reabrir" href="#" target="_blank" rel="noopener">Abrir o WhatsApp de novo</a>
+                <button class="btn btn--linha" type="button" id="ok-novo">Fazer outro agendamento</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="agenda__rodape" id="rodape-agenda">
+            <div class="total" aria-live="polite">
+              <span class="total__rot">Total</span>
+              <strong class="total__valor" id="total-valor">R$ 0,00</strong>
+              <span class="total__dur" id="total-dur">Escolha um serviço</span>
+            </div>
+            <div class="agenda__botoes">
+              <button class="btn btn--linha btn--voltar" type="button" id="btn-voltar">Voltar</button>
+              <button class="btn btn--primario" type="button" id="btn-avancar">Continuar</button>
+              <a class="btn btn--zap" id="btn-confirmar" href="#" target="_blank" rel="noopener" hidden>
+                <svg aria-hidden="true" viewBox="0 0 32 32" width="20" height="20"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3Zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.9-3.9-1.9-6.1C4.9 9.8 9.9 5 16 5s11.1 4.8 11.1 10.8S22.1 26.4 16 26.4Zm6.1-8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.5-.6-.8-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.4-.4-.7-.5Z"/></svg>
+                Confirmar pelo WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLUBE -->
+    <section class="secao secao--clube" id="clube" aria-labelledby="clube-titulo">
+      <div class="secao__in">
+        <header class="secao__cab secao__cab--claro">
+          <p class="sobretitulo">Assinatura mensal</p>
+          <h2 id="clube-titulo">Clube Dom Navalha</h2>
+          <p class="secao__intro">Pague uma vez por mês e corte quantas vezes quiser. O visual fica sempre em dia — e você ainda fura a fila na agenda.</p>
+        </header>
+        <div class="planos">
+          <article class="plano">
+            <h3 class="plano__nome">Corte Livre</h3>
+            <p class="plano__preco"><span>R$</span>99<small>/mês</small></p>
+            <ul class="plano__lista">
+              <li>Cortes ilimitados no mês</li>
+              <li>Pezinho e sobrancelha inclusos</li>
+              <li>Agenda com prioridade</li>
+            </ul>
+            <a class="btn btn--linha-claro" href="#" data-plano="Corte Livre" data-preco="R$ 99/mês" target="_blank" rel="noopener">Quero assinar</a>
+          </article>
+          <article class="plano plano--destaque">
+            <p class="plano__fita">O mais escolhido</p>
+            <h3 class="plano__nome">Dom Completo</h3>
+            <p class="plano__preco"><span>R$</span>149<small>/mês</small></p>
+            <ul class="plano__lista">
+              <li>Cortes e barbas ilimitados</li>
+              <li>Pezinho e sobrancelha inclusos</li>
+              <li>1 hidratação capilar por mês</li>
+              <li>10% de desconto em produtos</li>
+            </ul>
+            <a class="btn btn--ouro" href="#" data-plano="Dom Completo" data-preco="R$ 149/mês" target="_blank" rel="noopener">Quero assinar</a>
+          </article>
+          <article class="plano">
+            <h3 class="plano__nome">Barba em Dia</h3>
+            <p class="plano__preco"><span>R$</span>79<small>/mês</small></p>
+            <ul class="plano__lista">
+              <li>Barbas ilimitadas com toalha quente</li>
+              <li>Pigmentação com 50% de desconto</li>
+              <li>Agenda com prioridade</li>
+            </ul>
+            <a class="btn btn--linha-claro" href="#" data-plano="Barba em Dia" data-preco="R$ 79/mês" target="_blank" rel="noopener">Quero assinar</a>
+          </article>
+        </div>
+        <p class="clube__nota">Sem fidelidade. Cancele quando quiser, direto com a gente pelo WhatsApp.</p>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="secao" id="galeria" aria-labelledby="galeria-titulo">
+      <div class="secao__in">
+        <header class="secao__cab">
+          <p class="sobretitulo">Inspiração para a próxima visita</p>
+          <h2 id="galeria-titulo">Galeria de cortes</h2>
+          <p class="secao__intro">Os estilos mais pedidos da cadeira. Gostou de algum? Toque no card e ele já vai como observação no seu agendamento.</p>
+        </header>
+        <ul class="galeria" id="galeria-lista"></ul>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="secao secao--papel" aria-labelledby="dep-titulo">
+      <div class="secao__in">
+        <header class="secao__cab">
+          <p class="sobretitulo">Depoimentos de exemplo</p>
+          <h2 id="dep-titulo">O que a cadeira ouve</h2>
+          <p class="secao__intro">Textos ilustrativos desta demonstração — no site real entram as avaliações dos seus clientes.</p>
+        </header>
+        <div class="depoimentos">
+          <figure class="dep">
+            <blockquote>“Marquei no almoço pelo celular, cheguei e a cadeira estava me esperando. Saí com o degradê no ponto.”</blockquote>
+            <figcaption>Exemplo · cliente do Rafa</figcaption>
+          </figure>
+          <figure class="dep">
+            <blockquote>“A barba com toalha quente do Joca é outro nível. Virei assinante do clube no segundo mês.”</blockquote>
+            <figcaption>Exemplo · assinante Dom Completo</figcaption>
+          </figure>
+          <figure class="dep">
+            <blockquote>“Levo meu filho com o Dudu desde os 4 anos. Paciência de sobra e corte caprichado.”</blockquote>
+            <figcaption>Exemplo · pai de cliente mirim</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="secao secao--contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="secao__in contato">
+        <div class="contato__bloco">
+          <p class="sobretitulo">Onde estamos</p>
+          <h2 id="contato-titulo">Passa aqui na barbearia</h2>
+          <address class="endereco">
+            Rua Inácio Higino, 418 — loja 2<br>
+            Praia da Costa, Vila Velha – ES<br>
+            CEP 29101-430
+          </address>
+          <div class="contato__acoes">
+            <a class="btn btn--primario" id="link-mapa" href="#" target="_blank" rel="noopener">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+              Abrir no Google Maps
+            </a>
+            <a class="btn btn--linha" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram @domnavalha.vv (perfil fictício da demonstração)">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+              @domnavalha.vv
+            </a>
+          </div>
+          <p class="contato__tel">Telefone e WhatsApp: <strong>(27) 99712-4580</strong></p>
+          <ul class="mimos" aria-label="Comodidades">
+            <li>Wi-Fi liberado</li>
+            <li>Café e cerveja gelada</li>
+            <li>Pix e cartão</li>
+            <li>Estacionamento rotativo em frente</li>
+          </ul>
+        </div>
+
+        <div class="contato__bloco horario-card">
+          <h3>Horário de funcionamento</h3>
+          <table class="horario" id="tabela-horario">
+            <caption class="sr">Horário de funcionamento por dia da semana</caption>
+            <tbody>
+              <tr data-dia="1"><th scope="row">Segunda</th><td>9h – 20h</td></tr>
+              <tr data-dia="2"><th scope="row">Terça</th><td>9h – 20h</td></tr>
+              <tr data-dia="3"><th scope="row">Quarta</th><td>9h – 20h</td></tr>
+              <tr data-dia="4"><th scope="row">Quinta</th><td>9h – 20h</td></tr>
+              <tr data-dia="5"><th scope="row">Sexta</th><td>9h – 20h</td></tr>
+              <tr data-dia="6"><th scope="row">Sábado</th><td>8h – 18h</td></tr>
+              <tr data-dia="0"><th scope="row">Domingo</th><td>Fechado</td></tr>
+            </tbody>
+          </table>
+          <p class="horario__nota">Pausa para almoço de 12h às 13h (seg. a sex.). Chegue 5 minutinhos antes — o café já vai estar pronto.</p>
+          <p class="status-agora" id="status-agora"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape__in">
+      <p class="rodape__marca">Dom Navalha</p>
+      <p>Barbearia · Praia da Costa, Vila Velha – ES</p>
+      <p class="rodape__mini">Negócio fictício criado para demonstração. Nomes, endereço, telefone e perfil são ilustrativos.</p>
+    </div>
+  </footer>
+
+  <a class="zap-flutuante" id="zap-flutuante" href="#" target="_blank" rel="noopener" aria-label="Falar com a barbearia no WhatsApp">
+    <svg aria-hidden="true" viewBox="0 0 32 32" width="30" height="30"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3Zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.9-3.9-1.9-6.1C4.9 9.8 9.9 5 16 5s11.1 4.8 11.1 10.8S22.1 26.4 16 26.4Zm6.1-8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.5-.6-.8-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.4-.4-.7-.5Z"/></svg>
+  </a>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+  <script src="../_selo.js" data-demo="Barbearia com agendamento"></script>
+</body>
+</html>

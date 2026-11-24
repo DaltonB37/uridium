@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Latas de refrigerante geladas">
+  <rect width="400" height="400" fill="#F7E3C0"/>
+  <circle cx="200" cy="210" r="150" fill="#F3B23A" opacity=".35"/>
+  <g fill="#fff" opacity=".7"><circle cx="70" cy="80" r="6"/><circle cx="330" cy="70" r="4"/><circle cx="345" cy="300" r="7"/><circle cx="60" cy="300" r="4"/><circle cx="310" cy="150" r="3"/></g>
+  <g transform="rotate(-8 150 220)">
+    <rect x="95" y="105" width="110" height="200" rx="16" fill="#C8321C" stroke="#2A1912" stroke-width="6"/>
+    <rect x="95" y="96" width="110" height="22" rx="8" fill="#D9D3CB" stroke="#2A1912" stroke-width="6"/>
+    <rect x="95" y="292" width="110" height="20" rx="8" fill="#D9D3CB" stroke="#2A1912" stroke-width="6"/>
+    <path d="M95 190c30 18 80 18 110 0v40c-30 18-80 18-110 0z" fill="#FFF3D6"/>
+    <rect x="115" y="130" width="14" height="140" rx="7" fill="#fff" opacity=".35"/>
+    <g fill="#E9F6FF" opacity=".9"><circle cx="175" cy="150" r="4"/><circle cx="185" cy="170" r="3"/><circle cx="165" cy="265" r="4"/><circle cx="182" cy="250" r="2.5"/></g>
+  </g>
+  <g transform="rotate(9 255 230)">
+    <rect x="205" y="120" width="110" height="200" rx="16" fill="#2F7D3B" stroke="#2A1912" stroke-width="6"/>
+    <rect x="205" y="111" width="110" height="22" rx="8" fill="#D9D3CB" stroke="#2A1912" stroke-width="6"/>
+    <rect x="205" y="307" width="110" height="20" rx="8" fill="#D9D3CB" stroke="#2A1912" stroke-width="6"/>
+    <path d="M205 205c30 18 80 18 110 0v40c-30 18-80 18-110 0z" fill="#F3B23A"/>
+    <rect x="225" y="145" width="14" height="140" rx="7" fill="#fff" opacity=".3"/>
+    <g fill="#E9F6FF" opacity=".9"><circle cx="290" cy="160" r="4"/><circle cx="280" cy="285" r="3.5"/><circle cx="296" cy="270" r="2.5"/></g>
+  </g>
+  <g fill="#DFF3FF" stroke="#2A1912" stroke-width="5" stroke-linejoin="round"><path d="M60 330l40-14 14 38-40 14z"/><path d="M300 345l38 6-6 36-38-6z"/></g>
+</svg>

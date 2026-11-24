@@ -3,6 +3,7 @@ import {
   Nichos, Beneficios, Comparativo, ComoFunciona, Planos, Pagamento,
   Vantagens, Indicacao, Conversa, Duvidas, ChamadaFinal, Rodape, BotaoFlutuante,
 } from './components/Secoes'
+import { ProjetosProntos, Estudio } from './components/Catalogo'
 
 export default function App() {
   return (
@@ -14,10 +15,12 @@ export default function App() {
       <main id="conteudo">
         <Hero />
         <Nichos />
+        <ProjetosProntos />
         <Beneficios />
         <Comparativo />
         <ComoFunciona />
         <Planos />
+        <Estudio />
         <Pagamento />
         <Vantagens />
         <Indicacao />

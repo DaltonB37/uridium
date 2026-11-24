@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Maré Alta Distribuidora — Bebidas, Água e Gás em Vitória</title>
+  <meta name="description" content="Peça cerveja gelada, refrigerante, água mineral, gás de cozinha, gelo e carvão pelo app da Maré Alta Distribuidora. Entrega em 30 a 45 minutos em Vitória e Serra (ES).">
+  <meta name="theme-color" content="#0B5BD3">
+  <meta name="color-scheme" content="light">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Maré Alta">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta property="og:title" content="Maré Alta Distribuidora — peça pelo app">
+  <meta property="og:description" content="Bebidas geladas, água mineral e gás na sua porta. Peça em poucos toques e receba em 30 a 45 minutos.">
+  <meta property="og:image" content="icons/icon-512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Só aparece em telas grandes: explica a demonstração ao lado do "celular" -->
+  <aside class="lado" aria-label="Sobre esta demonstração">
+    <p class="lado-kicker">App de pedidos</p>
+    <h2 class="lado-titulo">Seu cliente pede em poucos toques. O pedido chega pronto no seu WhatsApp.</h2>
+    <ul class="lado-lista">
+      <li>Funciona no Android e no iPhone</li>
+      <li>Instala na tela inicial, sem loja de apps</li>
+      <li>Abre mesmo com internet fraca</li>
+    </ul>
+    <p class="lado-dica">Teste aqui: escolha produtos, informe o bairro e envie o pedido.</p>
+  </aside>
+
+  <div class="app" id="app">
+    <header class="topo">
+      <div class="marca">
+        <svg class="marca-logo" viewBox="0 0 512 512" aria-hidden="true"><defs><clipPath id="lg-c"><rect width="512" height="512" rx="120"/></clipPath></defs><g clip-path="url(#lg-c)"><rect width="512" height="512" fill="#fff"/><path d="M0 410 Q64 388 128 410 T256 410 T384 410 T512 410 V512 H0Z" fill="#CFE2FF"/><path d="M0 452 Q64 434 128 452 T256 452 T384 452 T512 452 V512 H0Z" fill="#8DB9FF"/></g><path d="M256 87 L340.2 214.5 A102.4 102.4 0 1 1 171.8 214.5 Z" fill="#FFC21A"/><ellipse cx="220" cy="256" rx="20" ry="40" fill="#FFE38A"/></svg>
+        <div class="marca-texto">
+          <strong>Maré Alta</strong>
+          <span>Bebidas · Água · Gás</span>
+        </div>
+      </div>
+      <button type="button" class="btn-instalar-topo" data-acao="instalar" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Instalar app
+      </button>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+
+      <!-- ============ INÍCIO ============ -->
+      <section class="view" id="view-inicio" aria-labelledby="titulo-inicio">
+        <div class="hero">
+          <p class="hero-ola" id="saudacao">Boa noite!</p>
+          <h1 class="hero-titulo" id="titulo-inicio">Bebida gelada, água e gás na sua porta.</h1>
+
+          <form class="busca" role="search" id="form-busca">
+            <label class="sr-only" for="campo-busca">Buscar produtos</label>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <input id="campo-busca" type="search" placeholder="Buscar cerveja, gás, água, gelo…" autocomplete="off" enterkeyhint="search">
+            <button type="button" class="busca-limpar" id="busca-limpar" aria-label="Limpar busca" hidden>✕</button>
+          </form>
+
+          <ul class="infos" aria-label="Informações da entrega">
+            <li class="info-status" id="status-loja"><span class="ponto" aria-hidden="true"></span><span><b id="status-titulo">Aberto agora</b> · <span id="status-detalhe">até as 23h</span></span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 9v4l2.5 2M9.5 3h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span>Entrega em <b>30–45 min</b></span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16l-1.5 12h-13z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 10V6a3 3 0 0 1 6 0v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Mínimo <b id="info-minimo">R$ 20,00</b></span></li>
+          </ul>
+        </div>
+
+        <div class="aviso-instalar" id="aviso-instalar" hidden>
+          <img src="icons/icon-192.png" alt="" width="44" height="44">
+          <div>
+            <strong>Instale o app da Maré Alta</strong>
+            <span>Fica na tela inicial do celular e abre em 1 toque.</span>
+          </div>
+          <button type="button" class="btn btn-mini" data-acao="instalar">Instalar</button>
+          <button type="button" class="fechar-x" data-acao="fechar-aviso-instalar" aria-label="Dispensar aviso de instalação">✕</button>
+        </div>
+
+        <div class="banners-wrap" id="bloco-banners">
+          <div class="banners" id="banners" tabindex="0" aria-roledescription="carrossel" aria-label="Promoções">
+            <article class="banner banner-churras" aria-roledescription="slide" aria-label="1 de 3">
+              <div class="banner-texto">
+                <span class="selo-promo">Combo da semana</span>
+                <h2>Kit Churrasco</h2>
+                <p>2 fardos de pilsen, 2 gelos 5kg e carvão 5kg.</p>
+                <p class="banner-preco"><s id="banner-de">R$ 143,50</s> <b id="banner-por">R$ 129,90</b></p>
+                <button type="button" class="btn btn-amarelo" data-acao="mais" data-chave="kit-churrasco|kit">Adicionar kit</button>
+              </div>
+              <div class="banner-arte" aria-hidden="true" data-arte="churras"></div>
+            </article>
+            <article class="banner banner-gas" aria-roledescription="slide" aria-label="2 de 3">
+              <div class="banner-texto">
+                <span class="selo-promo">Acabou o gás?</span>
+                <h2>Chega em até 40 min</h2>
+                <p>Recarga do P13 com lacre, nota fiscal e teste de vazamento.</p>
+                <p class="banner-preco"><b>R$ 119,90</b></p>
+                <button type="button" class="btn btn-amarelo" data-acao="categoria" data-cat="gas">Pedir gás</button>
+              </div>
+              <div class="banner-arte" aria-hidden="true" data-arte="gas"></div>
+            </article>
+            <article class="banner banner-agua" aria-roledescription="slide" aria-label="3 de 3">
+              <div class="banner-texto">
+                <span class="selo-promo">Jardim Camburi</span>
+                <h2>Entrega grátis</h2>
+                <p>Nos pedidos a partir de R$ 120,00 no bairro.</p>
+                <p class="banner-preco"><b>Taxa R$ 0,00</b></p>
+                <button type="button" class="btn btn-amarelo" data-acao="ir-aba" data-aba="loja" data-ancora="area-entrega">Ver bairros atendidos</button>
+              </div>
+              <div class="banner-arte" aria-hidden="true" data-arte="agua"></div>
+            </article>
+          </div>
+          <div class="banner-pontos" id="banner-pontos" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+
+        <section class="bloco" id="bloco-combos" aria-labelledby="titulo-combos">
+          <div class="bloco-cab">
+            <h2 id="titulo-combos">Combos prontos</h2>
+            <button type="button" class="link" data-acao="categoria" data-cat="combos">Ver todos</button>
+          </div>
+          <p class="bloco-sub">Um toque e o kit vai inteiro para o carrinho.</p>
+          <div class="combos" id="combos"></div>
+        </section>
+
+        <nav class="chips-wrap" aria-label="Categorias">
+          <div class="chips" id="chips"></div>
+        </nav>
+
+        <div class="lista" id="lista-produtos"></div>
+        <p class="aviso-legal">Venda de bebidas alcoólicas proibida para menores de 18 anos. Se beber, não dirija.</p>
+      </section>
+
+      <!-- ============ CARRINHO ============ -->
+      <section class="view" id="view-carrinho" aria-labelledby="titulo-carrinho" hidden>
+        <div class="view-cab">
+          <h1 id="titulo-carrinho">Seu carrinho</h1>
+          <button type="button" class="link link-perigo" data-acao="limpar-carrinho" id="btn-limpar">Esvaziar</button>
+        </div>
+
+        <div class="vazio" id="carrinho-vazio" hidden>
+          <div class="vazio-arte" aria-hidden="true" data-arte="carrinho"></div>
+          <h2>Seu carrinho está vazio</h2>
+          <p>Que tal uma cerveja gelada, um galão de água ou o gás que está acabando?</p>
+          <a class="btn" href="#inicio">Ver produtos</a>
+        </div>
+
+        <form id="form-pedido" novalidate>
+          <ul class="itens-carrinho" id="itens-carrinho" aria-label="Itens do pedido"></ul>
+          <a class="add-mais" href="#inicio">+ Adicionar mais itens</a>
+
+          <fieldset class="card-form">
+            <legend>Onde entregar</legend>
+            <div class="campo">
+              <label for="f-nome">Seu nome</label>
+              <input id="f-nome" name="nome" autocomplete="name" placeholder="Ex.: Ana Paula" required>
+            </div>
+            <div class="campo">
+              <label for="f-endereco">Rua e número</label>
+              <input id="f-endereco" name="endereco" autocomplete="street-address" placeholder="Ex.: Rua Carlos Martins, 120" required>
+            </div>
+            <div class="campo">
+              <label for="f-complemento">Complemento ou ponto de referência <span class="opcional">(opcional)</span></label>
+              <input id="f-complemento" name="complemento" placeholder="Ex.: Apto 302, bloco B · perto da padaria">
+            </div>
+            <div class="campo">
+              <label for="f-bairro">Bairro</label>
+              <select id="f-bairro" name="bairro" required></select>
+              <p class="campo-dica" id="dica-bairro"></p>
+            </div>
+          </fieldset>
+
+          <fieldset class="card-form">
+            <legend>Como vai pagar?</legend>
+            <p class="campo-dica">O pagamento é feito na entrega ou por Pix, sem cadastro.</p>
+            <div class="pagamentos" role="radiogroup" aria-label="Forma de pagamento">
+              <label class="pag">
+                <input type="radio" name="pagamento" value="pix" checked>
+                <span class="pag-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 20.5 12 12 20.5 3.5 12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m8.5 12 3.5-3.5 3.5 3.5-3.5 3.5z" fill="currentColor"/></svg></span>
+                <span class="pag-nome">Pix</span>
+              </label>
+              <label class="pag">
+                <input type="radio" name="pagamento" value="dinheiro">
+                <span class="pag-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="6.5" width="18" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+                <span class="pag-nome">Dinheiro</span>
+              </label>
+              <label class="pag">
+                <input type="radio" name="pagamento" value="cartao">
+                <span class="pag-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M7 15h4" stroke="currentColor" stroke-width="2"/></svg></span>
+                <span class="pag-nome">Cartão na entrega</span>
+              </label>
+            </div>
+            <p class="pag-info" id="pag-info"></p>
+
+            <div class="troco" id="bloco-troco" hidden>
+              <div class="campo">
+                <label for="f-troco">Troco para quanto?</label>
+                <div class="campo-moeda">
+                  <span aria-hidden="true">R$</span>
+                  <input id="f-troco" name="troco" inputmode="decimal" placeholder="Ex.: 100,00" autocomplete="off">
+                </div>
+                <p class="campo-dica" id="dica-troco"></p>
+              </div>
+              <label class="check">
+                <input type="checkbox" id="f-sem-troco" name="semTroco">
+                <span>Não preciso de troco (vou pagar o valor exato)</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="card-form">
+            <legend>Observações <span class="opcional">(opcional)</span></legend>
+            <label class="sr-only" for="f-obs">Observações do pedido</label>
+            <textarea id="f-obs" name="obs" rows="3" placeholder="Ex.: cerveja bem gelada · interfone 302 · trocar 2 cascos de 600ml"></textarea>
+          </fieldset>
+
+          <section class="resumo" aria-labelledby="titulo-resumo">
+            <h2 id="titulo-resumo" class="sr-only">Resumo do pedido</h2>
+            <dl>
+              <div><dt>Subtotal</dt><dd id="r-subtotal">R$ 0,00</dd></div>
+              <div><dt id="r-taxa-rotulo">Taxa de entrega</dt><dd id="r-taxa">—</dd></div>
+              <div class="resumo-total"><dt>Total</dt><dd id="r-total">R$ 0,00</dd></div>
+            </dl>
+            <div class="alertas" id="alertas" role="alert"></div>
+            <button type="submit" class="btn btn-zap" id="btn-enviar">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 8.6c.2-.5.5-.5.8-.5h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5.5.9 1.3 1.7 2.3 2.2.2.1.4.1.5-.1l.6-.7c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.3.6-.1.9-.8 1.6-1.7 1.7-1 .1-2.3-.2-4-1.6-1.4-1.2-2.3-2.6-2.5-3.6-.2-1 .2-1.7.5-1.9z" fill="currentColor"/></svg>
+              <span id="btn-enviar-texto">Enviar pedido pelo WhatsApp</span>
+            </button>
+            <p class="resumo-nota">O pedido abre no WhatsApp com tudo preenchido. É só tocar em enviar.</p>
+          </section>
+        </form>
+      </section>
+
+      <!-- ============ MEUS PEDIDOS ============ -->
+      <section class="view" id="view-pedidos" aria-labelledby="titulo-pedidos" hidden>
+        <div class="view-cab">
+          <h1 id="titulo-pedidos">Meus pedidos</h1>
+        </div>
+        <p class="view-sub">Seus últimos pedidos ficam salvos neste celular. Repita qualquer um com um toque.</p>
+        <div class="vazio" id="pedidos-vazio" hidden>
+          <div class="vazio-arte" aria-hidden="true" data-arte="pedidos"></div>
+          <h2>Nenhum pedido ainda</h2>
+          <p>Quando você enviar um pedido, ele aparece aqui para pedir de novo sem digitar nada.</p>
+          <a class="btn" href="#inicio">Fazer meu primeiro pedido</a>
+        </div>
+        <ol class="pedidos" id="lista-pedidos"></ol>
+      </section>
+
+      <!-- ============ LOJA ============ -->
+      <section class="view" id="view-loja" aria-labelledby="titulo-loja" hidden>
+        <div class="loja-capa">
+          <img src="icons/icon-192.png" alt="" width="64" height="64">
+          <div>
+            <h1 id="titulo-loja">Maré Alta Distribuidora</h1>
+            <p>Bebidas, água mineral e gás desde 2009</p>
+          </div>
+        </div>
+
+        <div class="card-info">
+          <h2>Endereço</h2>
+          <p>Rua das Castanheiras, 418 — Jardim Camburi<br>Vitória – ES · CEP 29090-000</p>
+          <p class="campo-dica">Também atendemos no balcão: passe aqui e retire seu pedido.</p>
+        </div>
+
+        <div class="card-info">
+          <h2>Horário de funcionamento</h2>
+          <table class="horarios" id="tabela-horarios"><caption class="sr-only">Horários por dia da semana</caption><tbody></tbody></table>
+        </div>
+
+        <div class="card-info" id="area-entrega">
+          <h2>Área de entrega e taxas</h2>
+          <ul class="bairros" id="lista-bairros"></ul>
+          <p class="campo-dica">Pedido mínimo de <b id="loja-minimo">R$ 20,00</b>. Tempo médio de entrega: 30 a 45 minutos.</p>
+        </div>
+
+        <div class="card-info">
+          <h2>Formas de pagamento</h2>
+          <ul class="formas">
+            <li><b>Pix</b> — a chave é enviada na confirmação pelo WhatsApp.</li>
+            <li><b>Dinheiro</b> — o entregador leva o troco que você pedir.</li>
+            <li><b>Cartão na entrega</b> — débito e crédito na maquininha.</li>
+          </ul>
+        </div>
+
+        <div class="card-info card-instalar" id="card-instalar">
+          <h2>Tenha o app no seu celular</h2>
+          <p>Instale a Maré Alta na tela inicial: abre como aplicativo, funciona no Android e no iPhone e não ocupa espaço.</p>
+          <button type="button" class="btn" data-acao="instalar" id="btn-instalar-loja">Instalar app</button>
+          <p class="campo-dica" id="instalado-msg" hidden>Você já está usando o app instalado. 👍</p>
+        </div>
+
+        <div class="card-info">
+          <h2>Segurança</h2>
+          <p>Botijões com lacre do fabricante e nota fiscal. Nossos entregadores fazem o teste de vazamento na instalação.</p>
+        </div>
+
+        <p class="aviso-legal">Venda de bebidas alcoólicas proibida para menores de 18 anos. Se beber, não dirija.</p>
+      </section>
+    </main>
+
+    <!-- Barra flutuante do carrinho (aparece na tela inicial) -->
+    <a class="barra-carrinho" id="barra-carrinho" href="#carrinho" hidden>
+      <span class="barra-qtd" id="barra-qtd">0</span>
+      <span class="barra-texto">Ver carrinho</span>
+      <span class="barra-total" id="barra-total">R$ 0,00</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#inicio" class="nav-item" data-aba="inicio">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 11 12 4l8.5 7v8.5a1 1 0 0 1-1 1H15v-6H9v6H4.5a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span>Início</span>
+      </a>
+      <a href="#carrinho" class="nav-item" data-aba="carrinho">
+        <span class="nav-ico-wrap">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.2 11h10.4l2-8H6.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.5" fill="currentColor"/><circle cx="17" cy="19.5" r="1.5" fill="currentColor"/></svg>
+          <span class="badge" id="badge-carrinho" hidden>0</span>
+        </span>
+        <span>Carrinho</span>
+      </a>
+      <a href="#pedidos" class="nav-item" data-aba="pedidos">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 8h6M9 12h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Pedidos</span>
+      </a>
+      <a href="#loja" class="nav-item" data-aba="loja">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5 5.5 4h13L20 9.5a2.7 2.7 0 0 1-5.3.5 2.7 2.7 0 0 1-5.4 0A2.7 2.7 0 0 1 4 9.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M5.5 12.5V20h13v-7.5M10 20v-4.5h4V20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span>Loja</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Instruções de instalação (iPhone e navegadores sem o botão automático) -->
+  <dialog class="dialogo" id="dlg-instalar" aria-labelledby="dlg-instalar-titulo">
+    <div class="dialogo-corpo">
+      <img src="icons/icon-192.png" alt="" width="56" height="56" class="dialogo-icone">
+      <h2 id="dlg-instalar-titulo">Instalar o app Maré Alta</h2>
+      <ol class="passos" id="passos-ios" hidden>
+        <li>Toque em <b>Compartilhar</b> <svg class="ico-inline" viewBox="0 0 24 24" aria-label="ícone de compartilhar"><path d="M12 3v12M8 7l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 10H5v10h14V10h-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg> na barra do Safari.</li>
+        <li>Role e escolha <b>Adicionar à Tela de Início</b>.</li>
+        <li>Toque em <b>Adicionar</b>. Pronto: o ícone da Maré Alta aparece junto com seus apps.</li>
+      </ol>
+      <ol class="passos" id="passos-outros" hidden>
+        <li>Abra o menu do navegador <b>⋮</b> (no canto da tela).</li>
+        <li>Toque em <b>Instalar app</b> ou <b>Adicionar à tela inicial</b>.</li>
+        <li>Confirme. O ícone da Maré Alta aparece junto com seus apps.</li>
+      </ol>
+      <form method="dialog"><button class="btn btn-largo" value="ok">Entendi</button></form>
+    </div>
+  </dialog>
+
+  <!-- Confirmação depois de enviar o pedido -->
+  <dialog class="dialogo" id="dlg-sucesso" aria-labelledby="dlg-sucesso-titulo">
+    <div class="dialogo-corpo">
+      <div class="check-anim" aria-hidden="true"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" fill="#12A150"/><path d="M15 27l7 7 15-16" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h2 id="dlg-sucesso-titulo">Pedido nº <span id="sucesso-numero">0000</span> pronto!</h2>
+      <p>Abrimos o WhatsApp com o pedido preenchido. <b>Confira e toque em enviar</b> para a Maré Alta confirmar.</p>
+      <p class="campo-dica" id="sucesso-fora" hidden>Estamos fechados agora: seu pedido entra na fila e sai assim que abrirmos.</p>
+      <a class="btn btn-zap btn-largo" id="sucesso-zap" href="#" target="_blank" rel="noopener">Abrir o WhatsApp de novo</a>
+      <button type="button" class="btn btn-claro btn-largo" data-acao="ver-pedidos">Ver meus pedidos</button>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+  <script src="../_selo.js" data-demo="App de distribuidora"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Brasa &amp; Pão · Hamburgueria artesanal em Vila Velha — Cardápio e pedidos</title>
+  <meta name="description" content="Cardápio digital da Brasa &amp; Pão, hamburgueria artesanal na Praia da Costa, Vila Velha (ES). Monte seu lanche, escolha os adicionais e envie o pedido direto pelo WhatsApp, sem taxa de aplicativo.">
+  <meta name="theme-color" content="#C8321C">
+  <meta property="og:title" content="Brasa &amp; Pão · Cardápio e pedidos pelo WhatsApp">
+  <meta property="og:description" content="Smash burgers na chapa, combos e porções. Peça direto pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular" href="#cardapio">Pular para o cardápio</a>
+
+  <header class="topo" id="topo">
+    <div class="topo-conteudo">
+      <img class="logo" src="img/logo.svg" alt="" width="88" height="88">
+      <div class="topo-txt">
+        <p class="topo-kicker">Hamburgueria artesanal · Praia da Costa</p>
+        <h1>Brasa <span class="amp">&amp;</span> Pão</h1>
+        <p class="topo-tag">Smash na chapa quente, blend da casa e brioche assado aqui.</p>
+      </div>
+    </div>
+    <ul class="infos" aria-label="Informações da loja">
+      <li class="info status" id="status"><span class="ponto" aria-hidden="true"></span><span><b>Carregando…</b></span></li>
+      <li class="info">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span><b>40–55 min</b> entrega</span>
+      </li>
+      <li class="info">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>
+        <span><b>R$ 25</b> pedido mín.</span>
+      </li>
+    </ul>
+    <p class="faixa-zap">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4.5 19.5l1.1-3.9A8.2 8.2 0 1 1 8.6 18.7z"/></svg>
+      <span><b>Peça direto com a gente pelo WhatsApp.</b> Sem cadastro e sem taxa de aplicativo.</span>
+    </p>
+  </header>
+
+  <div id="aviso" class="aviso" role="status" hidden></div>
+
+  <nav class="cats" aria-label="Categorias do cardápio">
+    <div class="cats-trilho" id="cats"></div>
+  </nav>
+
+  <main id="cardapio" class="cardapio" tabindex="-1"></main>
+
+  <footer class="rodape">
+    <img src="img/logo.svg" alt="" width="56" height="56">
+    <p class="rodape-nome">Brasa &amp; Pão</p>
+    <address>Rua das Castanheiras, 418 — Praia da Costa<br>Vila Velha/ES · 29101-000</address>
+    <dl class="horarios">
+      <div><dt>Terça a domingo</dt><dd>18h às 23h30</dd></div>
+      <div><dt>Segunda</dt><dd>fechado</dd></div>
+    </dl>
+    <p class="rodape-nota">Fotos meramente ilustrativas. Preços válidos para pedidos pelo cardápio digital.</p>
+  </footer>
+
+  <div class="barra" id="barra" hidden>
+    <button type="button" class="barra-btn" id="barra-btn">
+      <span class="barra-qtd" id="barra-qtd">0</span>
+      <span class="barra-rotulo" id="barra-rotulo">Ver sacola</span>
+      <span class="barra-total" id="barra-total">R$ 0,00</span>
+    </button>
+  </div>
+
+  <div class="veu" id="veu" hidden></div>
+  <section class="folha folha-item" id="folha-item" role="dialog" aria-modal="true" aria-labelledby="fi-titulo" hidden></section>
+  <section class="folha folha-sacola" id="folha-sacola" role="dialog" aria-modal="true" aria-labelledby="fs-titulo" hidden></section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+  <script src="../_selo.js" data-demo="Cardápio digital"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@ import { linkWhatsApp, MSG_PADRAO } from '../config'
 export function Logo({ className = '' }) {
   return (
     <a href="#inicio" className={`flex items-center gap-2.5 ${className}`} title="Voltar ao início">
-      <img src="./logo-horizontal-escuro.svg" alt="Órbita Digital" width="146" height="32" className="h-8 w-auto" />
+      <img src="./logo-horizontal-escuro.svg" alt="Uridium" width="168" height="32" className="h-8 w-auto" />
     </a>
   )
 }

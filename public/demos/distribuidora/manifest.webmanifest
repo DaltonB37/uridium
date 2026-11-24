@@ -1,0 +1,25 @@
+{
+  "name": "Maré Alta Distribuidora — Bebidas, Água e Gás",
+  "short_name": "Maré Alta",
+  "description": "Peça cerveja, refrigerante, água mineral, gás e gelo com entrega rápida em Vitória e Serra (ES).",
+  "lang": "pt-BR",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F3F7FC",
+  "theme_color": "#0B5BD3",
+  "categories": ["food", "shopping"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "shortcuts": [
+    { "name": "Pedir gás", "short_name": "Gás", "url": "./?cat=gas", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Pedir água", "short_name": "Água", "url": "./?cat=aguas", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Meus pedidos", "short_name": "Pedidos", "url": "./?aba=pedidos", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

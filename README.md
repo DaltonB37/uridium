@@ -1,6 +1,6 @@
-# Órbita Digital — site
+# Uridium — site
 
-Site da agência Órbita Digital. Feito com React, Vite e Tailwind CSS.
+Site da agência Uridium. Feito com React, Vite e Tailwind CSS.
 
 ## Editar os dados da agência
 Número do WhatsApp, e-mail, Instagram, planos e preços ficam em **`src/config.js`**.

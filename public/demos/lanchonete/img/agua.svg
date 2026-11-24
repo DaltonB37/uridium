@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Garrafa de água mineral gelada">
+  <rect width="400" height="400" fill="#DCEFF2"/>
+  <circle cx="200" cy="215" r="150" fill="#fff" opacity=".5"/>
+  <g stroke="#2A1912" stroke-width="6" stroke-linejoin="round">
+    <rect x="178" y="52" width="44" height="30" rx="6" fill="#2F7D3B"/>
+    <path d="M182 82h36v22c26 14 38 34 38 58v168c0 12-9 20-20 20h-72c-11 0-20-8-20-20V162c0-24 12-44 38-58z" fill="#BFE6F0" fill-opacity=".9"/>
+    <rect x="144" y="190" width="112" height="70" fill="#F3B23A"/>
+  </g>
+  <path d="M164 140c-6 10-8 20-8 30v150" stroke="#fff" stroke-width="12" stroke-linecap="round" fill="none" opacity=".7"/>
+  <path d="M175 215c10-12 40-12 50 0M175 235c10-12 40-12 50 0" stroke="#2A1912" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <g fill="#fff"><circle cx="235" cy="290" r="5"/><circle cx="220" cy="310" r="3"/><circle cx="238" cy="140" r="4"/></g>
+</svg>

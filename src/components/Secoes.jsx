@@ -113,7 +113,7 @@ export function Comparativo() {
         ))}
         <article className="relative rounded-3xl bg-gradient-to-br from-roxo to-magenta p-px">
           <div className="h-full rounded-[calc(1.5rem-1px)] bg-noite p-7">
-            <h3 className="flex items-center gap-2 text-lg font-semibold text-roxo-claro">Órbita Digital</h3>
+            <h3 className="flex items-center gap-2 text-lg font-semibold text-roxo-claro">Uridium</h3>
             <p className="mt-2 font-display text-2xl font-bold">A partir de R$ {preco(PLANOS[0].preco)}</p>
             <ul className="mt-6 space-y-3 text-sm">
               {['Pronto em até 7 dias úteis', 'Pagamento único, sem mensalidade obrigatória', 'O site e os arquivos são seus'].map((t) => (
@@ -166,8 +166,8 @@ export function Planos() {
       id="planos"
       centro
       className="bg-[radial-gradient(ellipse_at_top,#8B5CF61f,transparent_60%)]"
-      titulo="Escolha o seu plano"
-      subtitulo="Preço fechado, sem surpresa. Metade para começar e metade só quando você aprovar."
+      titulo="Prefere um site sob medida?"
+      subtitulo="Criamos do zero, com a cara do seu negócio. Preço fechado, metade para começar e metade só quando você aprovar."
     >
       <div className="grid items-stretch gap-5 lg:grid-cols-3">
         {PLANOS.map((p) => (
@@ -202,7 +202,7 @@ export function Planos() {
               ))}
             </ul>
             <BotaoZap
-              mensagem={`Olá! Vim pelo site da Órbita Digital e tenho interesse no plano ${p.nome} (R$ ${preco(p.preco)}).`}
+              mensagem={`Olá! Vim pelo site da Uridium e tenho interesse no plano ${p.nome} (R$ ${preco(p.preco)}).`}
               className={`mt-8 w-full ${p.destaque ? '' : '!bg-texto !shadow-none'}`}
             >
               Quero o {p.nome}
@@ -261,7 +261,7 @@ const VANTAGENS = [
 
 export function Vantagens() {
   return (
-    <Secao titulo="Por que a Órbita" subtitulo="O que você ganha trabalhando com uma agência pequena e focada.">
+    <Secao titulo="Por que a Uridium" subtitulo="O que você ganha trabalhando com uma agência pequena e focada.">
       <div className="grid gap-x-10 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
         {VANTAGENS.map(([Icone, titulo, texto]) => (
           <div key={titulo} className="flex gap-4">
@@ -293,7 +293,7 @@ export function Indicacao() {
             </p>
           </div>
           <a
-            href={linkWhatsApp('Olá! Quero indicar um negócio para a Órbita Digital.')}
+            href={linkWhatsApp('Olá! Quero indicar um negócio para a Uridium.')}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-espaco px-6 py-4 font-semibold transition hover:bg-noite md:justify-self-end"
@@ -411,6 +411,7 @@ export function Rodape() {
         <div>
           <Logo />
           <p className="mt-4 max-w-sm text-sm text-suave">{AGENCIA.slogan} {AGENCIA.cidade}.</p>
+          <p className="mt-3 max-w-sm text-xs leading-relaxed text-suave/70">Por que Uridium? É o nome de um metal que nunca existiu: nasceu em 1986 de um engano com o irídio, um dos metais mais raros da Terra, e virou a moeda mais valiosa dos jogos de nave. Um erro que virou raridade, como o negócio que ninguém consegue copiar.</p>
         </div>
         <nav aria-label="Rodapé">
           <p className="mb-3 font-semibold">Navegue</p>
@@ -423,8 +424,8 @@ export function Rodape() {
         <div>
           <p className="mb-3 font-semibold">Contato</p>
           <ul className="space-y-2 text-sm text-suave">
-            <li><a className="inline-flex items-center gap-2 hover:text-texto" href={linkWhatsApp('Olá! Vim pelo site da Órbita Digital.')} target="_blank" rel="noopener noreferrer"><IconeZap className="h-4 w-4" /> WhatsApp</a></li>
-            <li><a className="inline-flex items-center gap-2 hover:text-texto" href={`mailto:${AGENCIA.email}`}><Mail className="h-4 w-4" /> {AGENCIA.email}</a></li>
+            <li><a className="inline-flex items-center gap-2 hover:text-texto" href={linkWhatsApp('Olá! Vim pelo site da Uridium.')} target="_blank" rel="noopener noreferrer"><IconeZap className="h-4 w-4" /> WhatsApp</a></li>
+            {AGENCIA.email && <li><a className="inline-flex items-center gap-2 hover:text-texto" href={`mailto:${AGENCIA.email}`}><Mail className="h-4 w-4" /> {AGENCIA.email}</a></li>}
             <li><a className="inline-flex items-center gap-2 hover:text-texto" href={AGENCIA.instagram} target="_blank" rel="noopener noreferrer"><AtSign className="h-4 w-4" /> Instagram</a></li>
           </ul>
         </div>
@@ -437,7 +438,7 @@ export function Rodape() {
 export function BotaoFlutuante() {
   return (
     <a
-      href={linkWhatsApp('Olá! Vim pelo site da Órbita Digital e quero um orçamento.')}
+      href={linkWhatsApp('Olá! Vim pelo site da Uridium e quero um orçamento.')}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp"

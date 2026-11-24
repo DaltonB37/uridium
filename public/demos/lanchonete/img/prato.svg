@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Ilustração de hambúrguer">
+  <rect width="400" height="400" fill="#F7E3C0"/>
+  <circle cx="200" cy="200" r="150" fill="#F3B23A" opacity=".35"/>
+  <g stroke="#2A1912" stroke-width="8" stroke-linejoin="round">
+    <path d="M90 200c0-50 48-82 110-82s110 32 110 82z" fill="#E28E35"/>
+    <path d="M80 212c14-10 24 6 38-4s24 6 38-4 24 6 38-4 24 6 38-4 24 6 38-4 24 6 24 4v14H80z" fill="#5FA83A"/>
+    <rect x="80" y="222" width="240" height="42" rx="21" fill="#5A2B17"/>
+    <path d="M84 222h232l-16 28-20-16-20 28-22-26-24 24-20-24-26 26-20-24-24 20z" fill="#FFCF2E"/>
+    <path d="M92 276h216v8c0 20-16 34-36 34H128c-20 0-36-14-36-34z" fill="#E28E35"/>
+  </g>
+  <g fill="#FFF3D6"><ellipse cx="150" cy="165" rx="9" ry="5"/><ellipse cx="200" cy="148" rx="9" ry="5"/><ellipse cx="250" cy="165" rx="9" ry="5"/><ellipse cx="180" cy="185" rx="9" ry="5"/><ellipse cx="228" cy="186" rx="9" ry="5"/></g>
+</svg>

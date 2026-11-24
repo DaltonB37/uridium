@@ -3,8 +3,9 @@ import { Menu, X, Check } from 'lucide-react'
 import { Logo, BotaoZap } from './ui'
 
 const LINKS = [
-  { href: '#como-funciona', rotulo: 'Como funciona' },
+  { href: '#projetos', rotulo: 'Projetos prontos' },
   { href: '#planos', rotulo: 'Planos' },
+  { href: '#servicos', rotulo: 'Estúdio' },
   { href: '#duvidas', rotulo: 'Dúvidas' },
 ]
 
@@ -137,10 +138,10 @@ export function Hero() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <BotaoZap>Pedir orçamento no WhatsApp</BotaoZap>
             <a
-              href="#planos"
+              href="#projetos"
               className="inline-flex items-center justify-center rounded-full border border-borda px-6 py-3.5 font-semibold transition hover:border-roxo hover:bg-noite"
             >
-              Ver planos e preços
+              Ver projetos prontos
             </a>
           </div>
           <ul className="mt-9 grid gap-2.5 text-sm text-suave sm:grid-cols-3">
