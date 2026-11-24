@@ -109,3 +109,66 @@ details[open] .seta { rotate: 45deg; }
   .orbita, .orbita > .planeta > span, .faixa { animation: none; }
   .balao { animation: none; opacity: 1; }
 }
+
+/* ---------- Fundos das seções (variação sem perder o tema escuro) ---------- */
+
+/* Grade de pontos bem sutil, como um mapa estelar */
+.fundo-pontos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image: radial-gradient(#A78BFA59 1.2px, transparent 1.5px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 30%, transparent 100%);
+}
+
+/* Faixa um tom acima, com aurora roxa num canto e azul no outro */
+.fundo-faixa {
+  background:
+    radial-gradient(60% 90% at 100% 0%, #8B5CF640, transparent 70%),
+    radial-gradient(55% 80% at 0% 100%, #3B82F62e, transparent 70%),
+    #15102A;
+  border-block: 1px solid var(--color-borda);
+}
+
+/* Anéis de órbita enormes e quase invisíveis atrás do conteúdo */
+.fundo-orbitas::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 88% 55%, transparent 238px, #8B5CF64d 239px, #8B5CF64d 240.5px, transparent 241.5px),
+    radial-gradient(circle at 88% 55%, transparent 378px, #8B5CF638 379px, #8B5CF638 380.5px, transparent 381.5px),
+    radial-gradient(circle at 88% 55%, transparent 538px, #8B5CF626 539px, #8B5CF626 540.5px, transparent 541.5px),
+    radial-gradient(circle at 88% 55%, #8B5CF62a, transparent 230px);
+}
+
+/* Brilho verde do WhatsApp */
+.fundo-zap {
+  background:
+    radial-gradient(45% 60% at 22% 50%, #25D3662e, transparent 70%),
+    radial-gradient(40% 50% at 90% 10%, #8B5CF626, transparent 70%);
+}
+
+/* Horizonte de planeta no fim da página */
+.horizonte {
+  overflow: hidden;
+}
+.horizonte::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1150px;
+  width: 1700px;
+  height: 1300px;
+  translate: -50% 0;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, #1A1030 92%, transparent 100%);
+  box-shadow: 0 -2px 0 #C4B5FD55, 0 -30px 120px -10px #8B5CF6aa, 0 -80px 200px 0 #D946EF40;
+  pointer-events: none;
+  z-index: -1;
+}

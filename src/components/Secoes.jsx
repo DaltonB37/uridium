@@ -49,12 +49,13 @@ const BENEFICIOS = [
 export function Beneficios() {
   return (
     <Secao
+      className="fundo-pontos isolate"
       titulo="Um site que faz o cliente chamar você"
       subtitulo="Não é cartão de visita digital. É uma página feita para transformar visita em conversa e conversa em venda."
     >
       <div className="grid gap-px overflow-hidden rounded-3xl border border-borda bg-borda md:grid-cols-3">
         {BENEFICIOS.map(({ icone: Icone, titulo, texto }) => (
-          <article key={titulo} className="bg-espaco p-8">
+          <article key={titulo} className="bg-espaco/80 p-8 backdrop-blur-sm">
             <Icone className="h-7 w-7 text-roxo-claro" strokeWidth={1.75} />
             <h3 className="mt-5 text-xl font-semibold">{titulo}</h3>
             <p className="mt-3 text-suave">{texto}</p>
@@ -91,6 +92,7 @@ export function Comparativo() {
   return (
     <Secao
       id="comparativo"
+      className="fundo-faixa"
       titulo="Quanto custa ter um site de verdade?"
       subtitulo="Comparamos com os caminhos mais comuns para um pequeno negócio."
     >
@@ -141,7 +143,7 @@ const PASSOS = [
 
 export function ComoFunciona() {
   return (
-    <Secao id="como-funciona" titulo="Do primeiro oi ao site no ar" subtitulo="Quatro etapas, tudo pelo WhatsApp.">
+    <Secao id="como-funciona" className="fundo-orbitas isolate overflow-hidden" titulo="Do primeiro oi ao site no ar" subtitulo="Quatro etapas, tudo pelo WhatsApp.">
       <ol className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {PASSOS.map(([titulo, texto], i) => (
           <li key={titulo} className="relative rounded-3xl border border-borda p-7">
@@ -229,7 +231,7 @@ export function Pagamento() {
     { icone: Handshake, titulo: '50% agora, 50% na entrega', texto: 'Você só paga o restante depois de ver e aprovar o site.' },
   ]
   return (
-    <Secao titulo="Pagamento simples e seguro">
+    <Secao className="fundo-faixa" titulo="Pagamento simples e seguro">
       <div className="grid gap-5 md:grid-cols-3">
         {formas.map(({ icone: Icone, titulo, texto }) => (
           <article key={titulo} className="flex gap-4 rounded-3xl border border-borda p-6">
@@ -317,6 +319,7 @@ const CONVERSA = [
 export function Conversa() {
   return (
     <Secao
+      className="fundo-zap"
       titulo="Atendimento sem enrolação"
       subtitulo="Exemplo de como é uma conversa com a gente: perguntas diretas, proposta clara e você no controle."
     >
@@ -390,7 +393,7 @@ export function Duvidas() {
 /* ---------- Chamada final + rodapé ---------- */
 export function ChamadaFinal() {
   return (
-    <Secao centro>
+    <Secao centro className="horizonte isolate pb-40 md:pb-56">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold md:text-5xl">Vamos colocar o seu negócio em órbita?</h2>
         <p className="mt-5 text-lg text-suave">Mande um oi. A gente responde com uma proposta sob medida.</p>
