@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme {
+  --color-espaco: #0C0816;
+  --color-noite: #161126;
+  --color-borda: #2A2240;
+  --color-roxo: #8B5CF6;
+  --color-roxo-claro: #C4B5FD;
+  --color-magenta: #D946EF;
+  --color-zap: #25D366;
+  --color-zap-escuro: #128C4B;
+  --color-texto: #F5F3FF;
+  --color-suave: #A49FB8;
+
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-espaco);
+  color: var(--color-texto);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+p { text-wrap: pretty; }
+
+:focus-visible {
+  outline: 2px solid var(--color-roxo-claro);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Campo de estrelas do fundo */
+.estrelas {
+  background-image:
+    radial-gradient(1px 1px at 12% 18%, #ffffff55 50%, transparent 51%),
+    radial-gradient(1px 1px at 72% 12%, #ffffff40 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 38% 64%, #ffffff35 50%, transparent 51%),
+    radial-gradient(1px 1px at 86% 58%, #ffffff50 50%, transparent 51%),
+    radial-gradient(1px 1px at 22% 86%, #ffffff30 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 58% 32%, #ffffff30 50%, transparent 51%),
+    radial-gradient(1px 1px at 94% 88%, #ffffff40 50%, transparent 51%);
+  background-size: 420px 420px;
+}
+
+/* ---------- Órbita do hero (o elemento memorável) ---------- */
+.orbita {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 9999px;
+  border: 1px dashed #8B5CF64D;
+  animation: girar var(--tempo, 40s) linear infinite;
+}
+.orbita > .planeta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* posiciona o chip na borda do anel e desfaz a rotação para o texto ficar de pé */
+  transform: rotate(var(--angulo)) translateX(calc(var(--raio))) rotate(calc(var(--angulo) * -1));
+}
+.orbita > .planeta > span {
+  display: inline-block;
+  translate: -50% -50%;
+  animation: girar var(--tempo, 40s) linear infinite reverse;
+}
+
+@keyframes girar {
+  to { rotate: 360deg; }
+}
+
+/* Faixa de nichos rolando */
+.faixa {
+  animation: deslizar 38s linear infinite;
+}
+@keyframes deslizar {
+  to { transform: translateX(-50%); }
+}
+
+/* Entrada da conversa no celular */
+.balao {
+  opacity: 0;
+  animation: surgir 0.5s ease-out forwards;
+}
+@keyframes surgir {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+/* FAQ */
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+details[open] .seta { rotate: 45deg; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .orbita, .orbita > .planeta > span, .faixa { animation: none; }
+  .balao { animation: none; opacity: 1; }
+}
