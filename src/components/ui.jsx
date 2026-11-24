@@ -2,12 +2,8 @@ import { linkWhatsApp, MSG_PADRAO } from '../config'
 
 export function Logo({ className = '' }) {
   return (
-    <a href="#inicio" className={`flex items-center gap-2.5 ${className}`} aria-label="Órbita Digital, voltar ao início">
-      <img src="./simbolo.svg" alt="" width="32" height="32" className="h-8 w-8" />
-      <span className="font-display text-lg leading-none">
-        <span className="font-extrabold">Órbita</span>{' '}
-        <span className="font-normal text-suave">digital</span>
-      </span>
+    <a href="#inicio" className={`flex items-center gap-2.5 ${className}`} title="Voltar ao início">
+      <img src="./logo-horizontal-escuro.svg" alt="Órbita Digital" width="146" height="32" className="h-8 w-auto" />
     </a>
   )
 }

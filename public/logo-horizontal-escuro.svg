@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 419 92" width="838" height="184" role="img" aria-label="Órbita Digital">
+<title>Órbita Digital</title>
+<defs>
+<linearGradient id="orb-g" x1="11.21" y1="9.94" x2="55.21" y2="53.94" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#8B5CF6"/>
+<stop offset="1" stop-color="#D946EF"/>
+</linearGradient>
+<mask id="orb-m" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+<rect width="64" height="64" fill="#fff"/>
+<path d="M57.92 19.88A27.5 9 -26 0 1 8.49 43.99" fill="none" stroke="#000" stroke-width="9.8"/>
+</mask>
+<linearGradient id="wm-g" x1="0" y1="15" x2="0" y2="27" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#D946EF"/>
+<stop offset="1" stop-color="#8B5CF6"/>
+</linearGradient>
+</defs>
+<g transform="translate(1.76 4.4) scale(1.3)">
+<circle cx="34.74" cy="35.08" r="14" fill="url(#orb-g)" mask="url(#orb-m)"/>
+<path d="M43.8 18.48A27.5 9 -26 1 1 17.03 46.35" fill="none" stroke="url(#orb-g)" stroke-width="5" stroke-linecap="round"/>
+<circle cx="8.26" cy="41.71" r="5" fill="url(#orb-g)"/>
+</g>
+<g fill="none" stroke="#F5F3FF" stroke-linecap="round" stroke-linejoin="round">
+<path d="M99.81 45a14.9 14.9 0 1 0 29.8 0a14.9 14.9 0 1 0 -29.8 0ZM142.81 59.9V50A9.9 9.9 0 0 1 152.71 40.1h1.5M164.91 29.1V50M164.91 50a9.9 9.9 0 1 0 19.8 0a9.9 9.9 0 1 0 -19.8 0ZM197.91 40.1V59.9M212.61 32.1V59.9M207.61 40.1H219.61M228.31 50a9.9 9.9 0 1 0 19.8 0a9.9 9.9 0 1 0 -19.8 0ZM248.11 40.1V59.9" stroke-width="6.2"/>
+<path d="M269.71 50a11.5 11.5 0 1 0 23 0a11.5 11.5 0 1 0 -23 0ZM292.71 27.5V61.5M304.71 38.5V61.5M315.21 50a11.5 11.5 0 1 0 23 0a11.5 11.5 0 1 0 -23 0ZM338.21 38.5V64A9.5 9.5 0 0 1 320.49 68.75M350.21 38.5V61.5M362.21 30.5V61.5M357.21 38.5H369.21M375.71 50a11.5 11.5 0 1 0 23 0a11.5 11.5 0 1 0 -23 0ZM398.71 38.5V61.5M410.71 27.5V61.5" stroke-width="3"/>
+</g>
+<g fill="#F5F3FF">
+<circle cx="197.91" cy="29.7" r="3.5"/>
+<circle cx="304.71" cy="31.3" r="1.9"/>
+<circle cx="350.21" cy="31.3" r="1.9"/>
+</g>
+<path d="M116.91 22.6l3.8 -3.9" fill="none" stroke="url(#wm-g)" stroke-width="6.2" stroke-linecap="round"/>
+</svg>
