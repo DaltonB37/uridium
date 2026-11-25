@@ -157,6 +157,26 @@ export const PROJETOS = [
     prazo: '4 dias úteis',
     itens: ['Catálogo com filtros, cores e tamanhos', 'Sacola com cupom de desconto', 'Venda finalizada no WhatsApp'],
   },
+  {
+    pasta: 'carros',
+    nicho: 'Revendas de carros',
+    nome: 'Estoque online',
+    icone: 'Car',
+    cor: ['#F2A81D', '#B45309'],
+    preco: 1197,
+    prazo: '5 dias úteis',
+    itens: ['Estoque com filtros e ficha de cada carro', 'Simulador de financiamento e avaliação na troca', 'Interesse e test drive direto no WhatsApp'],
+  },
+  {
+    pasta: 'bike',
+    nicho: 'Bikes elétricas e mobilidade',
+    nome: 'Catálogo com comparador',
+    icone: 'Bike',
+    cor: ['#C8F542', '#0F766E'],
+    preco: 997,
+    prazo: '4 dias úteis',
+    itens: ['Catálogo com cores e comparador de modelos', 'Calculadora de economia', 'Test ride e revisão agendados no WhatsApp'],
+  },
 ]
 
 // ------------------------------------------------------------

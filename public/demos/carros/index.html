@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Basalto Seminovos · Carros revisados em Vila Velha – ES</title>
+  <meta name="description" content="Basalto Seminovos, revenda de carros seminovos na Av. Carlos Lindenberg, Vila Velha (ES). Estoque com laudo cautelar, simulador de financiamento, avaliação do seu carro na troca e test drive marcado pelo WhatsApp.">
+  <meta name="theme-color" content="#0F1113">
+  <meta property="og:title" content="Basalto Seminovos · Vila Velha – ES">
+  <meta property="og:description" content="Seminovos revisados, com laudo cautelar e preço na vitrine. Simule a parcela e fale direto no WhatsApp.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular" href="#estoque">Pular para o estoque</a>
+
+  <header class="topo" id="topo">
+    <div class="topo-in">
+      <a class="marca" href="#inicio" aria-label="Basalto Seminovos, voltar ao início">
+        <svg class="marca-icone" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 9 51 20v24L32 55 13 44V20Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M32 21v22" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-dasharray="5 6"/>
+        </svg>
+        <span class="marca-txt">Basalto<small>seminovos · Vila Velha</small></span>
+      </a>
+      <nav class="nav" aria-label="Seções">
+        <a href="#estoque">Estoque</a>
+        <a href="#simulador">Financiamento</a>
+        <a href="#troca">Troca</a>
+        <a href="#test-drive">Test drive</a>
+        <a href="#visite">Visite</a>
+      </nav>
+      <a class="btn btn-ambar btn-mini" href="#estoque">Ver carros</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero escuro" aria-labelledby="hero-titulo">
+      <div class="hero-in">
+        <div class="hero-texto">
+          <p class="etiqueta"><span class="ponto" aria-hidden="true"></span> Av. Carlos Lindenberg · Vila Velha – ES</p>
+          <h1 id="hero-titulo">Seu próximo carro já passou pela <em>nossa oficina.</em></h1>
+          <p class="hero-lead">Seminovos com laudo cautelar, revisão feita e preço na vitrine. Escolha aqui, simule a parcela e fale direto com o vendedor pelo WhatsApp, sem cadastro e sem enrolação.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-ambar" href="#estoque">Ver o estoque</a>
+            <a class="btn btn-linha" href="#simulador">Simular parcela</a>
+          </div>
+          <ul class="hero-fatos" aria-label="Destaques da loja">
+            <li><strong id="fato-qtd">12</strong> carros no pátio</li>
+            <li><strong>100%</strong> com laudo cautelar</li>
+            <li><strong>até 60x</strong> no financiamento</li>
+          </ul>
+        </div>
+        <div class="hero-arte" aria-hidden="true">
+          <div class="hero-estrada"></div>
+          <div class="hero-carro" id="hero-carro"></div>
+          <p class="hero-placa"><span>ES</span>BAS-4L70</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GARANTIAS -->
+    <section class="garantias claro" aria-labelledby="garantias-titulo">
+      <h2 id="garantias-titulo" class="visualmente-oculto">Por que comprar na Basalto</h2>
+      <ul class="garantias-lista">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/></svg>
+          <h3>Laudo cautelar</h3>
+          <p>Todo carro passa por vistoria independente antes de entrar no pátio. O laudo fica com você.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.3L3 18l3 3 6.4-6.3a4 4 0 0 0 5.3-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>
+          <h3>Revisão feita</h3>
+          <p>Óleo, filtros, freios e pneus conferidos na nossa oficina. Você sai rodando.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg>
+          <h3>Documentação inclusa</h3>
+          <p>A transferência no Detran-ES é por nossa conta. Você só assina.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+          <h3>3 meses de garantia</h3>
+          <p>Motor e câmbio cobertos por 90 dias ou 5.000 km, o que vier primeiro.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ESTOQUE -->
+    <section class="estoque claro" id="estoque" aria-labelledby="estoque-titulo">
+      <div class="secao-in">
+        <header class="secao-cab">
+          <p class="secao-num">01 · Estoque</p>
+          <h2 id="estoque-titulo">Carros no pátio</h2>
+          <p class="secao-lead">Atualizado toda semana. Toque no carro para ver a ficha completa, os opcionais e a parcela estimada.</p>
+        </header>
+
+        <div class="filtros" id="filtros">
+          <div class="tipos" role="group" aria-label="Tipo de carro" id="filtro-tipos"></div>
+          <div class="filtros-linha">
+            <label class="campo campo-busca">
+              <span class="visualmente-oculto">Buscar por marca ou modelo</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+              <input type="search" id="filtro-busca" placeholder="Buscar marca ou modelo" autocomplete="off" maxlength="40">
+            </label>
+            <label class="campo">
+              <span>Preço</span>
+              <select id="filtro-preco">
+                <option value="">Qualquer preço</option>
+                <option value="0-70000">Até R$ 70 mil</option>
+                <option value="70000-120000">R$ 70 a 120 mil</option>
+                <option value="120000-180000">R$ 120 a 180 mil</option>
+                <option value="180000-9999999">Acima de R$ 180 mil</option>
+              </select>
+            </label>
+            <label class="campo">
+              <span>Câmbio</span>
+              <select id="filtro-cambio">
+                <option value="">Todos</option>
+                <option value="Automático">Automático</option>
+                <option value="Manual">Manual</option>
+              </select>
+            </label>
+            <label class="campo">
+              <span>Ordenar</span>
+              <select id="filtro-ordem">
+                <option value="destaque">Destaques</option>
+                <option value="menor">Menor preço</option>
+                <option value="maior">Maior preço</option>
+                <option value="km">Menor km</option>
+                <option value="ano">Mais novo</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="resultado-linha">
+          <p id="resultado-qtd" aria-live="polite"></p>
+          <button type="button" class="link-btn" id="limpar-filtros" hidden>Limpar filtros</button>
+        </div>
+
+        <ul class="grade" id="grade"></ul>
+        <div class="vazio" id="vazio" hidden>
+          <p class="vazio-tit">Nenhum carro com esses filtros agora.</p>
+          <p>Conta pra gente o que você procura: o estoque muda toda semana e a gente avisa quando chegar.</p>
+          <div class="vazio-acoes">
+            <button type="button" class="btn btn-linha-escura" id="vazio-limpar">Limpar filtros</button>
+            <a class="btn btn-zap" id="vazio-zap" href="#" target="_blank" rel="noopener">Avise quando chegar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMULADOR -->
+    <section class="simulador escuro" id="simulador" aria-labelledby="sim-titulo">
+      <div class="secao-in sim-grade">
+        <header class="secao-cab">
+          <p class="secao-num">02 · Financiamento</p>
+          <h2 id="sim-titulo">Simule a parcela antes de sair de casa</h2>
+          <p class="secao-lead">Escolha o carro, ajuste a entrada e o prazo. A gente leva sua simulação para os bancos parceiros e volta com a melhor proposta.</p>
+          <ul class="sim-dicas">
+            <li>Entrada maior = parcela menor e juros totais menores.</li>
+            <li>Seu carro usado pode entrar como parte da entrada.</li>
+            <li>Resposta do crédito costuma sair no mesmo dia.</li>
+          </ul>
+        </header>
+
+        <form class="painel" id="form-sim" novalidate>
+          <label class="campo">
+            <span>Carro</span>
+            <select id="sim-carro"></select>
+          </label>
+          <label class="campo">
+            <span>Valor do carro</span>
+            <span class="campo-moeda">
+              <span aria-hidden="true">R$</span>
+              <input id="sim-preco" inputmode="numeric" autocomplete="off" maxlength="11" aria-describedby="sim-preco-erro">
+            </span>
+          </label>
+          <p class="erro" id="sim-preco-erro" hidden>Digite um valor entre R$ 10.000 e R$ 1.000.000.</p>
+
+          <div class="campo">
+            <label for="sim-entrada" class="rotulo-linha">
+              <span>Entrada</span>
+              <output id="sim-entrada-valor" for="sim-entrada"></output>
+            </label>
+            <input type="range" id="sim-entrada" min="0" max="80" step="5" value="30">
+            <p class="faixa-legenda"><span>Sem entrada</span><span>80%</span></p>
+          </div>
+
+          <fieldset class="campo">
+            <legend>Número de parcelas</legend>
+            <div class="segmentos" id="sim-prazos">
+              <label><input type="radio" name="prazo" value="24"><span>24x</span></label>
+              <label><input type="radio" name="prazo" value="36"><span>36x</span></label>
+              <label><input type="radio" name="prazo" value="48" checked><span>48x</span></label>
+              <label><input type="radio" name="prazo" value="60"><span>60x</span></label>
+            </div>
+          </fieldset>
+
+          <label class="check">
+            <input type="checkbox" id="sim-troca">
+            <span>Tenho um carro para dar na troca</span>
+          </label>
+
+          <div class="sim-resultado" aria-live="polite">
+            <p class="sim-rot">Parcela estimada</p>
+            <p class="sim-parcela"><span id="sim-prazo-txt">48x</span> <strong id="sim-parcela">R$ 0</strong></p>
+            <dl class="sim-resumo">
+              <div><dt>Valor financiado</dt><dd id="sim-financiado">R$ 0</dd></div>
+              <div><dt>Total a prazo</dt><dd id="sim-total">R$ 0</dd></div>
+            </dl>
+            <p class="sim-aviso"><strong>Valor estimado, sujeito à análise de crédito.</strong> Cálculo pela tabela Price com taxa de referência de <span id="sim-taxa">1,89%</span> ao mês, sem IOF e tarifas. A taxa final depende do banco, do seu perfil e do ano do carro.</p>
+          </div>
+
+          <button class="btn btn-zap btn-cheio" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-zap"/></svg>
+            Enviar simulação no WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- TROCA -->
+    <section class="troca claro" id="troca" aria-labelledby="troca-titulo">
+      <div class="secao-in duas-col">
+        <header class="secao-cab">
+          <p class="secao-num">03 · Troca</p>
+          <h2 id="troca-titulo">Avalie seu carro na troca</h2>
+          <p class="secao-lead">Mande os dados do seu carro e receba uma pré-avaliação pelo WhatsApp. A proposta final é feita depois de uma vistoria rápida aqui na loja, em uns 20 minutos.</p>
+          <ol class="passos">
+            <li><span>1</span> Você manda marca, modelo, ano e km.</li>
+            <li><span>2</span> A gente responde com uma faixa de valor.</li>
+            <li><span>3</span> Vistoria na loja e o valor entra como entrada.</li>
+          </ol>
+        </header>
+
+        <form class="painel painel-claro" id="form-troca" novalidate>
+          <div class="campo-duplo">
+            <label class="campo">
+              <span>Marca</span>
+              <select id="tr-marca" required aria-describedby="tr-marca-erro">
+                <option value="">Escolha</option>
+              </select>
+            </label>
+            <label class="campo">
+              <span>Modelo e versão</span>
+              <input id="tr-modelo" required maxlength="40" placeholder="ex.: Gol 1.0" autocomplete="off" aria-describedby="tr-modelo-erro">
+            </label>
+          </div>
+          <p class="erro" id="tr-marca-erro" hidden>Escolha a marca do carro.</p>
+          <p class="erro" id="tr-modelo-erro" hidden>Conta qual é o modelo.</p>
+          <div class="campo-duplo">
+            <label class="campo">
+              <span>Ano</span>
+              <select id="tr-ano" required aria-describedby="tr-ano-erro">
+                <option value="">Escolha</option>
+              </select>
+            </label>
+            <label class="campo">
+              <span>Quilometragem</span>
+              <input id="tr-km" inputmode="numeric" required maxlength="9" placeholder="ex.: 85.000" autocomplete="off" aria-describedby="tr-km-erro">
+            </label>
+          </div>
+          <p class="erro" id="tr-ano-erro" hidden>Escolha o ano do carro.</p>
+          <p class="erro" id="tr-km-erro" hidden>Digite a quilometragem (só números).</p>
+
+          <fieldset class="campo">
+            <legend>Como está o carro?</legend>
+            <div class="chips" id="tr-estado">
+              <label><input type="radio" name="estado" value="Muito conservado" checked><span>Muito conservado</span></label>
+              <label><input type="radio" name="estado" value="Com pequenos detalhes"><span>Pequenos detalhes</span></label>
+              <label><input type="radio" name="estado" value="Precisando de reparos"><span>Precisa de reparos</span></label>
+            </div>
+          </fieldset>
+
+          <label class="campo">
+            <span>Quer trocar por algum do estoque? <small>(opcional)</small></span>
+            <select id="tr-interesse"><option value="">Ainda não sei</option></select>
+          </label>
+
+          <label class="campo">
+            <span>Seu nome <small>(opcional)</small></span>
+            <input id="tr-nome" maxlength="50" autocomplete="given-name" placeholder="Como podemos te chamar?">
+          </label>
+
+          <button class="btn btn-zap btn-cheio" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-zap"/></svg>
+            Pedir avaliação no WhatsApp
+          </button>
+          <p class="nota-centro">Dica: na conversa, mande 4 fotos (frente, traseira, laterais) e uma do painel ligado.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- TEST DRIVE -->
+    <section class="test-drive escuro" id="test-drive" aria-labelledby="td-titulo">
+      <div class="secao-in duas-col">
+        <header class="secao-cab">
+          <p class="secao-num">04 · Test drive</p>
+          <h2 id="td-titulo">Marque um test drive</h2>
+          <p class="secao-lead">Escolha o carro, o dia e o período. Deixamos ele lavado, abastecido e na porta esperando você. Traga a CNH.</p>
+        </header>
+
+        <form class="painel" id="form-td" novalidate>
+          <label class="campo">
+            <span>Qual carro?</span>
+            <select id="td-carro" required aria-describedby="td-carro-erro"><option value="">Escolha um carro</option></select>
+          </label>
+          <p class="erro" id="td-carro-erro" hidden>Escolha o carro que você quer dirigir.</p>
+
+          <fieldset class="campo">
+            <legend>Dia</legend>
+            <div class="dias" id="td-dias"></div>
+          </fieldset>
+
+          <fieldset class="campo">
+            <legend>Período</legend>
+            <div class="segmentos segmentos-2" id="td-periodos">
+              <label><input type="radio" name="periodo" value="manha" checked><span>Manhã<small id="td-manha-hora">8h às 12h</small></span></label>
+              <label><input type="radio" name="periodo" value="tarde"><span>Tarde<small id="td-tarde-hora">13h às 18h</small></span></label>
+            </div>
+            <p class="nota" id="td-sabado" hidden>Aos sábados a loja abre só de manhã.</p>
+          </fieldset>
+
+          <label class="campo">
+            <span>Seu nome</span>
+            <input id="td-nome" required maxlength="50" autocomplete="given-name" placeholder="Para deixar o carro reservado" aria-describedby="td-nome-erro">
+          </label>
+          <p class="erro" id="td-nome-erro" hidden>Digite seu nome para a gente reservar o horário.</p>
+
+          <button class="btn btn-ambar btn-cheio" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-zap"/></svg>
+            Agendar pelo WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- VISITE -->
+    <section class="visite claro" id="visite" aria-labelledby="visite-titulo">
+      <div class="secao-in">
+        <header class="secao-cab">
+          <p class="secao-num">05 · Visite</p>
+          <h2 id="visite-titulo">O pátio fica na Carlos Lindenberg</h2>
+          <p class="secao-lead">Estacionamento para clientes, café passado e sala com ar-condicionado para fechar negócio com calma.</p>
+        </header>
+        <div class="visite-grade">
+          <article class="cartao cartao-mapa">
+            <div class="mapa" aria-hidden="true">
+              <svg viewBox="0 0 320 150" preserveAspectRatio="xMidYMid slice">
+                <rect width="320" height="150" fill="#DAD7CF"/>
+                <path d="M-10 92 L330 64" stroke="#F7F5F0" stroke-width="16"/>
+                <path d="M-10 92 L330 64" stroke="#F2A81D" stroke-width="1.6" stroke-dasharray="8 8"/>
+                <g stroke="#F7F5F0" stroke-width="6"><path d="M60 0 L82 150"/><path d="M190 0 L208 150"/><path d="M-10 30 L330 14"/><path d="M-10 136 L330 118"/></g>
+                <rect x="216" y="80" width="40" height="26" rx="3" fill="#121417"/>
+                <circle cx="236" cy="56" r="15" fill="#F2A81D" opacity=".25"/>
+                <path d="M236 34c-7.7 0-13 5.6-13 12.6 0 9.4 13 22.4 13 22.4s13-13 13-22.4c0-7-5.3-12.6-13-12.6z" fill="#121417"/>
+                <circle cx="236" cy="47" r="4.6" fill="#F2A81D"/>
+                <text x="14" y="85" font-size="10" fill="#4A4F55" font-family="Archivo, sans-serif" font-weight="700" transform="rotate(-4.7 14 85)">AV. CARLOS LINDENBERG</text>
+              </svg>
+            </div>
+            <h3>Endereço</h3>
+            <p>Av. Carlos Lindenberg, 3480<br>Cobilândia, Vila Velha – ES<br>CEP 29111-250</p>
+            <a class="btn btn-linha-escura btn-pequeno" id="link-mapa" href="#" target="_blank" rel="noopener">Abrir no Google Maps</a>
+          </article>
+          <article class="cartao">
+            <h3>Horários</h3>
+            <table class="horarios">
+              <caption class="visualmente-oculto">Horário de funcionamento</caption>
+              <tbody>
+                <tr><th scope="row">Segunda a sexta</th><td>8h às 18h</td></tr>
+                <tr><th scope="row">Sábado</th><td>8h às 13h</td></tr>
+                <tr><th scope="row">Domingo e feriados</th><td>Fechado</td></tr>
+              </tbody>
+            </table>
+            <p class="nota">O WhatsApp responde no mesmo horário. Mensagens da noite são respondidas logo cedo.</p>
+          </article>
+          <article class="cartao">
+            <h3>Formas de pagamento</h3>
+            <ul class="lista-check">
+              <li>Financiamento em até 60x com bancos parceiros</li>
+              <li>Seu usado como parte do pagamento</li>
+              <li>Pix ou transferência à vista</li>
+              <li>Consórcio contemplado</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape escuro">
+    <div class="rodape-in">
+      <p class="marca-txt rodape-marca">Basalto<small>seminovos · Vila Velha</small></p>
+      <p>Av. Carlos Lindenberg, 3480 · Cobilândia, Vila Velha – ES</p>
+      <p>Seg. a sex. 8h às 18h · Sáb. 8h às 13h</p>
+      <p class="rodape-fino">Revenda fictícia criada para demonstração. Carros, preços e ilustrações são exemplos.</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a class="fab-zap" id="fab-zap" href="#" target="_blank" rel="noopener" aria-label="Falar com a Basalto pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-zap"/></svg>
+  </a>
+
+  <!-- Ficha do carro -->
+  <dialog class="modal" id="modal-carro" aria-labelledby="mc-nome">
+    <div class="modal-in" id="modal-conteudo"></div>
+  </dialog>
+
+  <!-- Ícones reaproveitados -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-zap" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm0 1.6a7.4 7.4 0 1 1-3.8 13.8l-.3-.2-2.7.7.7-2.6-.2-.3A7.4 7.4 0 0 1 12 4.6zm-3 3.6c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.3s1 2.7 1.1 2.9c.2.2 2 3.1 4.9 4.2 2.4.9 2.9.8 3.4.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4l-.5-.3-1.8-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.2-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.5l.4-.5.3-.5v-.5l-.8-2c-.2-.5-.4-.4-.6-.4H9z"/></symbol>
+  </svg>
+
+  <script src="app.js"></script>
+  <script src="../_selo.js" data-demo="Revenda de carros"></script>
+</body>
+</html>
