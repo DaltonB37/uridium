@@ -1,16 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Uridium">
-<title>Uridium</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
 <defs>
-<linearGradient id="fav-g" x1="11.2" y1="10.04" x2="55.2" y2="54.04" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#8B5CF6"/>
-<stop offset="1" stop-color="#D946EF"/>
-</linearGradient>
-<mask id="fav-m" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
-<rect width="64" height="64" fill="#fff"/>
-<path d="M60.16 18.89A30 9.5 -26 0 1 6.23 45.19" fill="none" stroke="#000" stroke-width="13.8"/>
-</mask>
-</defs>
-<circle cx="34.95" cy="35.64" r="15.5" fill="url(#fav-g)" mask="url(#fav-m)"/>
-<path d="M47.43 17.03A30 9.5 -26 1 1 18.17 47.2" fill="none" stroke="url(#fav-g)" stroke-width="7" stroke-linecap="round"/>
-<circle cx="6.02" cy="42.77" r="6" fill="url(#fav-g)"/>
+  <linearGradient id="cr-a" x1="12" y1="3" x2="40" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F3E8FF"/><stop offset="1" stop-color="#C4B5FD"/></linearGradient>
+  <linearGradient id="cr-b" x1="32" y1="3" x2="52" y2="25" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E9D5FF"/><stop offset="1" stop-color="#D946EF"/></linearGradient>
+  <linearGradient id="cr-c" x1="12" y1="25" x2="32" y2="61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#4C1D95"/></linearGradient>
+  <linearGradient id="cr-d" x1="32" y1="25" x2="52" y2="55" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C026D3"/><stop offset="1" stop-color="#701A75"/></linearGradient>
+  <linearGradient id="cr-e" x1="22" y1="25" x2="32" y2="61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#6D28D9"/></linearGradient>
+  <linearGradient id="cr-f" x1="32" y1="25" x2="42" y2="61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E879F9"/><stop offset="1" stop-color="#9333EA"/></linearGradient></defs>
+
+  <g>
+    <polygon points="32,3 12,25 22,25" fill="url(#cr-a)" />
+    <polygon points="32,3 22,25 32,14" fill="#FAF5FF" />
+    <polygon points="32,3 32,14 42,25" fill="url(#cr-b)" />
+    <polygon points="32,3 42,25 52,25" fill="url(#cr-b)" opacity=".85"/>
+    <polygon points="32,14 22,25 42,25" fill="#DDD6FE" />
+    <polygon points="12,25 22,25 32,61" fill="url(#cr-c)" />
+    <polygon points="22,25 32,25 32,61" fill="url(#cr-e)"/>
+    <polygon points="32,25 42,25 32,61" fill="url(#cr-f)"/>
+    <polygon points="42,25 52,25 32,61" fill="url(#cr-d)" />
+    
+    
+  </g>
 </svg>

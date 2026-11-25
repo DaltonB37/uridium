@@ -1,16 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Uridium">
 <title>Uridium</title>
 <defs>
-<linearGradient id="orb-g" x1="11.21" y1="9.94" x2="55.21" y2="53.94" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#8B5CF6"/>
-<stop offset="1" stop-color="#D946EF"/>
-</linearGradient>
-<mask id="orb-m" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
-<rect width="64" height="64" fill="#fff"/>
-<path d="M57.92 19.88A27.5 9 -26 0 1 8.49 43.99" fill="none" stroke="#000" stroke-width="9.8"/>
-</mask>
-</defs>
-<circle cx="34.74" cy="35.08" r="14" fill="url(#orb-g)" mask="url(#orb-m)"/>
-<path d="M43.8 18.48A27.5 9 -26 1 1 17.03 46.35" fill="none" stroke="url(#orb-g)" stroke-width="5" stroke-linecap="round"/>
-<circle cx="8.26" cy="41.71" r="5" fill="url(#orb-g)"/>
+  <linearGradient id="cr-a" x1="12" y1="3" x2="40" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F3E8FF"/><stop offset="1" stop-color="#C4B5FD"/></linearGradient>
+  <linearGradient id="cr-b" x1="32" y1="3" x2="52" y2="25" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E9D5FF"/><stop offset="1" stop-color="#D946EF"/></linearGradient>
+  <linearGradient id="cr-c" x1="12" y1="25" x2="32" y2="61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#4C1D95"/></linearGradient>
+  <linearGradient id="cr-d" x1="32" y1="25" x2="52" y2="55" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C026D3"/><stop offset="1" stop-color="#701A75"/></linearGradient>
+  <linearGradient id="cr-e" x1="22" y1="25" x2="32" y2="61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#6D28D9"/></linearGradient>
+  <linearGradient id="cr-f" x1="32" y1="25" x2="42" y2="61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E879F9"/><stop offset="1" stop-color="#9333EA"/></linearGradient>
+  <radialGradient id="cr-glow" cx="32" cy="32" r="30" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#D946EF" stop-opacity=".55"/><stop offset=".45" stop-color="#8B5CF6" stop-opacity=".28"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+  <filter id="cr-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter></defs>
+<circle cx="32" cy="32" r="30" fill="url(#cr-glow)"/>
+  <g filter="url(#cr-blur)" opacity=".7"><polygon points="32,3 12,25 32,61 52,25" fill="#C084FC"/></g>
+
+  <g>
+    <polygon points="32,3 12,25 22,25" fill="url(#cr-a)" />
+    <polygon points="32,3 22,25 32,14" fill="#FAF5FF" />
+    <polygon points="32,3 32,14 42,25" fill="url(#cr-b)" />
+    <polygon points="32,3 42,25 52,25" fill="url(#cr-b)" opacity=".85"/>
+    <polygon points="32,14 22,25 42,25" fill="#DDD6FE" />
+    <polygon points="12,25 22,25 32,61" fill="url(#cr-c)" />
+    <polygon points="22,25 32,25 32,61" fill="url(#cr-e)"/>
+    <polygon points="32,25 42,25 32,61" fill="url(#cr-f)"/>
+    <polygon points="42,25 52,25 32,61" fill="url(#cr-d)" />
+    <g fill="none" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M12,25 L52,25" stroke-opacity=".55" stroke-width=".6"/>
+      <path d="M22,25 L32,61 M42,25 L32,61 M32,25 L32,61" stroke-opacity=".22" stroke-width=".5"/>
+      <path d="M32,3 L22,25 M32,3 L42,25 M22,25 L32,14 L42,25" stroke-opacity=".35" stroke-width=".5"/>
+      <path d="M12,25 L32,3" stroke-opacity=".8" stroke-width=".55"/>
+    </g>
+    <path d="M23.5 10.5 L24.3 13.7 L27.5 14.5 L24.3 15.3 L23.5 18.5 L22.7 15.3 L19.5 14.5 L22.7 13.7 Z" fill="#FFFFFF"/>
+  </g>
 </svg>

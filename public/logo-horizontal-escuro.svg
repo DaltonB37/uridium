@@ -1,27 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 57" width="600" height="114" role="img" aria-label="Uridium">
 <title>Uridium</title>
 <defs>
-<linearGradient id="orb-g" x1="11.21" y1="9.94" x2="55.21" y2="53.94" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#8B5CF6"/>
-<stop offset="1" stop-color="#D946EF"/>
-</linearGradient>
-<mask id="orb-m" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
-<rect width="64" height="64" fill="#fff"/>
-<path d="M57.92 19.88A27.5 9 -26 0 1 8.49 43.99" fill="none" stroke="#000" stroke-width="9.8"/>
-</mask>
-<linearGradient id="wm-g" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0" stop-color="#8B5CF6"/>
-<stop offset="1" stop-color="#D946EF"/>
-</linearGradient>
-</defs>
-<g transform="translate(1.76 -13.1) scale(1.3)">
-<circle cx="34.74" cy="35.08" r="14" fill="url(#orb-g)" mask="url(#orb-m)"/>
-<path d="M43.8 18.48A27.5 9 -26 1 1 17.03 46.35" fill="none" stroke="url(#orb-g)" stroke-width="5" stroke-linecap="round"/>
-<circle cx="8.26" cy="41.71" r="5" fill="url(#orb-g)"/>
+  <linearGradient id="cr-a" x1="12" y1="3" x2="40" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F3E8FF"/><stop offset="1" stop-color="#C4B5FD"/></linearGradient>
+  <linearGradient id="cr-b" x1="32" y1="3" x2="52" y2="25" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E9D5FF"/><stop offset="1" stop-color="#D946EF"/></linearGradient>
+  <linearGradient id="cr-c" x1="12" y1="25" x2="32" y2="61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#4C1D95"/></linearGradient>
+  <linearGradient id="cr-d" x1="32" y1="25" x2="52" y2="55" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C026D3"/><stop offset="1" stop-color="#701A75"/></linearGradient>
+  <linearGradient id="cr-e" x1="22" y1="25" x2="32" y2="61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#6D28D9"/></linearGradient>
+  <linearGradient id="cr-f" x1="32" y1="25" x2="42" y2="61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E879F9"/><stop offset="1" stop-color="#9333EA"/></linearGradient>
+  <radialGradient id="cr-glow" cx="32" cy="32" r="30" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#D946EF" stop-opacity=".55"/><stop offset=".45" stop-color="#8B5CF6" stop-opacity=".28"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+  <filter id="cr-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter></defs>
+<g transform="translate(30 2.3) scale(.82)">
+<circle cx="32" cy="32" r="30" fill="url(#cr-glow)"/>
+  <g filter="url(#cr-blur)" opacity=".7"><polygon points="32,3 12,25 32,61 52,25" fill="#C084FC"/></g>
+
+  <g>
+    <polygon points="32,3 12,25 22,25" fill="url(#cr-a)" />
+    <polygon points="32,3 22,25 32,14" fill="#FAF5FF" />
+    <polygon points="32,3 32,14 42,25" fill="url(#cr-b)" />
+    <polygon points="32,3 42,25 52,25" fill="url(#cr-b)" opacity=".85"/>
+    <polygon points="32,14 22,25 42,25" fill="#DDD6FE" />
+    <polygon points="12,25 22,25 32,61" fill="url(#cr-c)" />
+    <polygon points="22,25 32,25 32,61" fill="url(#cr-e)"/>
+    <polygon points="32,25 42,25 32,61" fill="url(#cr-f)"/>
+    <polygon points="42,25 52,25 32,61" fill="url(#cr-d)" />
+    <g fill="none" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M12,25 L52,25" stroke-opacity=".55" stroke-width=".6"/>
+      <path d="M22,25 L32,61 M42,25 L32,61 M32,25 L32,61" stroke-opacity=".22" stroke-width=".5"/>
+      <path d="M32,3 L22,25 M32,3 L42,25 M22,25 L32,14 L42,25" stroke-opacity=".35" stroke-width=".5"/>
+      <path d="M12,25 L32,3" stroke-opacity=".8" stroke-width=".55"/>
+    </g>
+    <path d="M23.5 10.5 L24.3 13.7 L27.5 14.5 L24.3 15.3 L23.5 18.5 L22.7 15.3 L19.5 14.5 L22.7 13.7 Z" fill="#FFFFFF"/>
+  </g>
 </g>
 <path d="M100.81 13.6V31A12.4 12.4 0 0 0 125.61 31V13.6M139.81 43.4V33.5A9.9 9.9 0 0 1 149.71 23.6h1.5M162.41 23.6V43.4M175.61 33.5a9.9 9.9 0 1 0 19.8 0a9.9 9.9 0 1 0 -19.8 0ZM195.41 12.6V43.4M210.11 23.6V43.4M224.81 23.6V33.5A9.9 9.9 0 0 0 244.61 33.5M244.61 23.6V43.4M259.31 23.6V43.4M259.31 31.32A7.72 7.72 0 0 1 274.76 31.32V43.4M274.76 31.32A7.72 7.72 0 0 1 290.2 31.32V43.4" fill="none" stroke="#F5F3FF" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"/>
-<g fill="url(#wm-g)" stroke="url(#wm-g)" stroke-width="1.6" stroke-linejoin="round">
-<path d="M162.41 8.93L166.68 13.2L162.41 17.47L158.14 13.2Z"/>
-<path d="M210.11 8.93L214.38 13.2L210.11 17.47L205.84 13.2Z"/>
-</g>
+<g>
+    <polygon points="162.41,7 158.522,11.59 162.41,11.59" fill="#EDE9FE"/>
+    <polygon points="162.41,7 162.41,11.59 166.298,11.59" fill="url(#cr-b)"/>
+    <polygon points="158.522,11.59 162.41,17.8 162.41,11.59" fill="url(#cr-c)"/>
+    <polygon points="162.41,11.59 162.41,17.8 166.298,11.59" fill="url(#cr-d)"/>
+  </g>
+<g>
+    <polygon points="210.11,7 206.222,11.59 210.11,11.59" fill="#EDE9FE"/>
+    <polygon points="210.11,7 210.11,11.59 213.99800000000002,11.59" fill="url(#cr-b)"/>
+    <polygon points="206.222,11.59 210.11,17.8 210.11,11.59" fill="url(#cr-c)"/>
+    <polygon points="210.11,11.59 210.11,17.8 213.99800000000002,11.59" fill="url(#cr-d)"/>
+  </g>
 </svg>
