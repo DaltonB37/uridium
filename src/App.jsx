@@ -4,6 +4,8 @@ import {
   Vantagens, Indicacao, Conversa, Duvidas, ChamadaFinal, Rodape, BotaoFlutuante,
 } from './components/Secoes'
 import { ProjetosProntos, Estudio } from './components/Catalogo'
+import { VideoApresentacao } from './components/Video'
+import { Combos } from './components/Combos'
 
 export default function App() {
   return (
@@ -14,12 +16,14 @@ export default function App() {
       <Cabecalho />
       <main id="conteudo">
         <Hero />
+        <VideoApresentacao />
         <Nichos />
         <ProjetosProntos />
         <Beneficios />
         <Comparativo />
         <ComoFunciona />
         <Planos />
+        <Combos />
         <Estudio />
         <Pagamento />
         <Vantagens />

@@ -67,6 +67,43 @@ export const PLANOS = [
 export const MANUTENCAO = 59
 
 // ------------------------------------------------------------
+//  PACOTES PROMOCIONAIS (preço de lançamento)
+//  "de" = soma dos preços avulsos deste arquivo. Mude "por" à vontade.
+// ------------------------------------------------------------
+export const COMBOS = [
+  {
+    nome: 'Site + Google',
+    resumo: 'Para ser achado por quem procura perto de você.',
+    itens: ['Site Essencial', 'Perfil no Google Meu Negócio (Maps)'],
+    de: 497 + 147,
+    por: 597,
+  },
+  {
+    nome: 'Site + WhatsApp pronto',
+    resumo: 'Para atender rápido e com cara de empresa.',
+    itens: ['Site Essencial', 'WhatsApp Business configurado', 'Cartão digital com QR Code'],
+    de: 497 + 147 + 97,
+    por: 647,
+  },
+  {
+    nome: 'Começar do zero',
+    resumo: 'Para quem ainda não tem nem logo.',
+    itens: ['Kit logomarca', 'Site Essencial', 'Google Meu Negócio', 'WhatsApp Business configurado'],
+    de: 297 + 497 + 147 + 147,
+    por: 897,
+    destaque: true,
+  },
+  {
+    nome: 'Projeto pronto + Google + WhatsApp',
+    resumo: 'Escolha uma demo e já saia aparecendo no Google.',
+    itens: ['Qualquer projeto pronto da lista acima', 'Google Meu Negócio', 'WhatsApp Business configurado'],
+    de: null,
+    adicional: 197,
+    adicionalDe: 147 + 147,
+  },
+]
+
+// ------------------------------------------------------------
 //  PROJETOS PRONTOS (demos funcionais em public/demos/<pasta>)
 // ------------------------------------------------------------
 export const PROJETOS = [

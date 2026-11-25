@@ -5,6 +5,7 @@ import { Logo, BotaoZap } from './ui'
 const LINKS = [
   { href: '#projetos', rotulo: 'Projetos prontos' },
   { href: '#planos', rotulo: 'Planos' },
+  { href: '#pacotes', rotulo: 'Pacotes' },
   { href: '#servicos', rotulo: 'Estúdio' },
   { href: '#duvidas', rotulo: 'Dúvidas' },
 ]
