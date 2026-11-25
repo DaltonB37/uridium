@@ -172,5 +172,6 @@ export const SERVICOS = [
   { cat: 'Vídeo', icone: 'Mic', nome: 'Narração com voz natural', preco: 67, unidade: 'por vídeo', desc: 'Locução em português com voz natural para vídeos institucionais e anúncios. Até 1 minuto.' },
   { cat: 'Redes', icone: 'LayoutGrid', nome: 'Pacote de 10 artes', preco: 197, unidade: '', desc: 'Dez artes para Instagram com a sua identidade: promoções, avisos, produtos e datas.' },
   { cat: 'Configuração', icone: 'MessageCircle', nome: 'WhatsApp Business pronto', preco: 147, unidade: '', desc: 'Perfil, catálogo, mensagem de boas-vindas, ausência e respostas rápidas configurados.' },
+  { cat: 'Configuração', icone: 'CreditCard', nome: 'Pagamentos configurados', preco: 247, unidade: '', desc: 'Pix e link de pagamento (cartão e parcelado) no seu site e no WhatsApp, em conta no seu nome. O dinheiro cai direto pra você; ajudamos a escolher a empresa com a menor taxa.' },
   { cat: 'Configuração', icone: 'MapPin', nome: 'Google Meu Negócio', preco: 147, unidade: '', desc: 'Seu negócio no Google Maps com fotos, horários e descrição otimizada para ser encontrado.' },
 ]

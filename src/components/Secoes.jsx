@@ -369,6 +369,7 @@ const DUVIDAS = [
   ['Preciso ter domínio (.com.br)?', 'Não para começar: o site pode ir ao ar num endereço gratuito. Quando quiser, você registra o seu domínio (custa cerca de R$ 40 por ano no Registro.br) e nós conectamos.'],
   ['O site é meu mesmo?', 'Sim. Você recebe todos os arquivos. Se um dia quiser trocar de hospedagem ou de profissional, leva tudo com você.'],
   ['Posso pedir alterações depois de pronto?', 'Sim. As rodadas de ajuste do plano valem até a aprovação. Depois disso, alterações entram na manutenção mensal ou são orçadas à parte.'],
+  ['Como meus clientes pagam pelo site?', 'Configuramos Pix e link de pagamento (cartão e parcelado) numa empresa de pagamentos como Mercado Pago, InfinitePay ou PagBank, em conta no seu nome. O dinheiro cai direto na sua conta, nunca passa pela Uridium. As taxas são da empresa escolhida e variam: o Pix costuma ser grátis ou abaixo de 1%, e o cartão fica em geral entre 3% e 5%, mais caro quando parcelado. Antes de configurar, comparamos as taxas com você.'],
   ['Vocês atendem fora do Espírito Santo?', 'Sim. Todo o atendimento é pelo WhatsApp, então atendemos negócios de qualquer cidade do Brasil.'],
 ]
 

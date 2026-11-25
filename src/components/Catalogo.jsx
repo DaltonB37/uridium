@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import {
   Check, ExternalLink, Circle, Scissors, Truck, Sandwich, Sparkles, Shirt, PenTool, QrCode,
-  Clapperboard, Film, Captions, Languages, Mic, LayoutGrid, MessageCircle, MapPin,
+  Clapperboard, Film, Captions, Languages, Mic, LayoutGrid, MessageCircle, MapPin, CreditCard,
 } from 'lucide-react'
 
-const Icones = { Scissors, Truck, Sandwich, Sparkles, Shirt, PenTool, QrCode, Clapperboard, Film, Captions, Languages, Mic, LayoutGrid, MessageCircle, MapPin }
+const Icones = { Scissors, Truck, Sandwich, Sparkles, Shirt, PenTool, QrCode, Clapperboard, Film, Captions, Languages, Mic, LayoutGrid, MessageCircle, MapPin, CreditCard }
 import { Secao, BotaoZap, preco } from './ui'
 import { PROJETOS, SERVICOS, MANUTENCAO } from '../config'
 
