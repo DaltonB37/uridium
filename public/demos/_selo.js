@@ -9,6 +9,8 @@
     site: '../../',                   // volta para o site da agência
   };
 
+  // o selo fica em /demos/_selo.js: o site da agência é a pasta acima dele (funciona também em /demos/para/<cliente>/)
+  try { if (document.currentScript && document.currentScript.src) AGENCIA.site = new URL('../', document.currentScript.src).href; } catch (e) {}
   var demo = document.currentScript && document.currentScript.getAttribute('data-demo') || 'este projeto';
   var msg = 'Olá! Vi a demonstração "' + demo + '" e quero um site assim para o meu negócio.';
   var zap = 'https://wa.me/' + AGENCIA.whatsapp + '?text=' + encodeURIComponent(msg);
