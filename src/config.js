@@ -8,7 +8,9 @@ export const AGENCIA = {
   // Só números, com 55 + DDD. Ex.: '5527999998888'
   whatsapp: '55XXXXXXXXXXX', // PREENCHER
   email: '', // PREENCHER quando criar (ex.: o Gmail da agência). Vazio = não aparece no site
-  instagram: 'https://instagram.com/', // PREENCHER
+  instagram: 'https://www.instagram.com/agenciauridium/',
+  youtube: 'https://www.youtube.com/@agenciauridium',
+  threads: 'https://www.threads.com/@agenciauridium',
   cidade: 'Grande Vitória, ES — atendimento em todo o Brasil',
 }
 

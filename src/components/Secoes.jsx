@@ -1,8 +1,8 @@
 import {
   Search, Smartphone, MessageCircle, Check, Minus, QrCode, CreditCard, Handshake,
-  Gauge, PenTool, KeyRound, MapPin, Headphones, Gift, Plus, AtSign, Mail,
+  Gauge, PenTool, KeyRound, MapPin, Headphones, Gift, Plus, Mail,
 } from 'lucide-react'
-import { Secao, BotaoZap, Logo, IconeZap, preco } from './ui'
+import { Secao, BotaoZap, Logo, IconeZap, IconeInstagram, IconeYouTube, IconeThreads, preco } from './ui'
 import { AGENCIA, PLANOS, MANUTENCAO, linkWhatsApp } from '../config'
 
 /* ---------- Nichos + benefícios ---------- */
@@ -427,7 +427,9 @@ export function Rodape() {
           <ul className="space-y-2 text-sm text-suave">
             <li><a className="inline-flex items-center gap-2 hover:text-texto" href={linkWhatsApp('Olá! Vim pelo site da Uridium.')} target="_blank" rel="noopener noreferrer"><IconeZap className="h-4 w-4" /> WhatsApp</a></li>
             {AGENCIA.email && <li><a className="inline-flex items-center gap-2 hover:text-texto" href={`mailto:${AGENCIA.email}`}><Mail className="h-4 w-4" /> {AGENCIA.email}</a></li>}
-            <li><a className="inline-flex items-center gap-2 hover:text-texto" href={AGENCIA.instagram} target="_blank" rel="noopener noreferrer"><AtSign className="h-4 w-4" /> Instagram</a></li>
+            <li><a className="inline-flex items-center gap-2 hover:text-texto" href={AGENCIA.instagram} target="_blank" rel="noopener noreferrer"><IconeInstagram /> Instagram</a></li>
+            <li><a className="inline-flex items-center gap-2 hover:text-texto" href={AGENCIA.youtube} target="_blank" rel="noopener noreferrer"><IconeYouTube /> YouTube</a></li>
+            <li><a className="inline-flex items-center gap-2 hover:text-texto" href={AGENCIA.threads} target="_blank" rel="noopener noreferrer"><IconeThreads /> Threads</a></li>
           </ul>
         </div>
       </div>
