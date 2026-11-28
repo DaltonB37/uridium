@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nanquim Estúdio de Tatuagem · Itapuã, Vila Velha</title>
+  <meta name="description" content="Estúdio de tatuagem em Itapuã, Vila Velha (ES). Fineline, old school, blackwork, lettering e floral. Veja o portfólio, monte seu orçamento e agende sua sessão pelo WhatsApp.">
+  <meta name="theme-color" content="#141210">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Rethink+Sans:ital,wght@0,400..800;1,400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular" href="#orcamento">Pular para o orçamento</a>
+
+  <header class="topo" id="topo">
+    <div class="topo__in">
+      <a class="marca" href="#inicio" aria-label="Nanquim Estúdio de Tatuagem, início">
+        <svg class="marca__gota" viewBox="0 0 32 40" aria-hidden="true"><path d="M16 2 C10 14 4 20 4 27 a12 12 0 0 0 24 0 C28 20 22 14 16 2Z" fill="#141210"/><path d="M10 27 a6 6 0 0 0 4 6" fill="none" stroke="#F8F1E0" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <span class="marca__nome">Nanquim<small>Estúdio de Tatuagem</small></span>
+      </a>
+      <nav class="menu" aria-label="Seções">
+        <a href="#portfolio">Portfólio</a>
+        <a href="#flashday">Flash day</a>
+        <a href="#orcamento">Orçamento</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+      <a class="btn btn--mini" href="#orcamento">Orçamento</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="hero__in">
+        <div class="hero__texto">
+          <p class="selo-local">Itapuã · Vila Velha – ES</p>
+          <h1 id="hero-titulo" class="hero__titulo">Nanquim</h1>
+          <p class="hero__tipo">Estúdio de Tatuagem</p>
+          <p class="hero__slogan">Traço firme, tinta que fica.</p>
+          <p class="hero__sub">Do fineline delicado ao old school de contorno grosso. Escolha um desenho do portfólio ou conte sua ideia: o orçamento sai em um minuto e chega pronto no nosso WhatsApp.</p>
+          <div class="hero__acoes">
+            <a class="btn btn--primario" href="#orcamento">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M4 20l4-1 11-11-3-3L5 16l-1 4ZM14 7l3 3"/></svg>
+              Montar meu orçamento
+            </a>
+            <a class="btn btn--linha" href="#portfolio">Ver portfólio</a>
+          </div>
+        </div>
+        <div class="hero__arte">
+          <div class="folha" aria-hidden="true">
+            <span class="folha__fita folha__fita--a"></span>
+            <span class="folha__fita folha__fita--b"></span>
+            <p class="folha__tit">Flash</p>
+            <svg viewBox="0 0 400 420" id="hero-flash" focusable="false"></svg>
+            <p class="folha__rodape">Nanquim · folha nº 1</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="faixa" aria-hidden="true">
+      <p><span>Fineline</span><i>✦</i><span>Old school</span><i>✦</i><span>Blackwork</span><i>✦</i><span>Lettering</span><i>✦</i><span>Floral</span></p>
+    </div>
+
+    <!-- PORTFÓLIO -->
+    <section class="secao" id="portfolio" aria-labelledby="portfolio-titulo">
+      <div class="secao__in">
+        <header class="secao__cab">
+          <p class="sobretitulo">Desenhos da casa</p>
+          <h2 id="portfolio-titulo">Portfólio</h2>
+          <p class="secao__intro">Toque em um desenho para ver o tamanho sugerido. Gostou? “Quero esse” já leva ele para o seu orçamento.</p>
+        </header>
+        <div class="filtros" id="filtros" role="group" aria-label="Filtrar por estilo">
+          <button type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button type="button" data-filtro="fineline" aria-pressed="false">Fineline</button>
+          <button type="button" data-filtro="oldschool" aria-pressed="false">Old school</button>
+          <button type="button" data-filtro="blackwork" aria-pressed="false">Blackwork</button>
+          <button type="button" data-filtro="lettering" aria-pressed="false">Lettering</button>
+          <button type="button" data-filtro="floral" aria-pressed="false">Floral</button>
+        </div>
+        <p class="contagem" id="contagem-flash" aria-live="polite"></p>
+        <ul class="grade-flash" id="grade-flash"></ul>
+      </div>
+    </section>
+
+    <!-- ARTISTAS -->
+    <section class="secao secao--artistas" aria-labelledby="artistas-titulo">
+      <div class="secao__in">
+        <header class="secao__cab">
+          <p class="sobretitulo">Quem tatua</p>
+          <h2 id="artistas-titulo">Dois traços, um estúdio</h2>
+        </header>
+        <div class="dupla">
+          <article class="perfil">
+            <div class="perfil__arte fino" aria-hidden="true"><svg viewBox="0 0 200 200" id="arte-lia"></svg></div>
+            <div>
+              <h3>Lia Nunes</h3>
+              <p class="perfil__estilo">Fineline e floral</p>
+              <p>Linhas finas, flores, luas e letrinhas delicadas. Ideal para a primeira tatuagem e para peças pequenas com muito detalhe.</p>
+            </div>
+          </article>
+          <article class="perfil">
+            <div class="perfil__arte" aria-hidden="true"><svg viewBox="0 0 200 200" id="arte-caio"></svg></div>
+            <div>
+              <h3>Caio Prates</h3>
+              <p class="perfil__estilo">Old school e blackwork</p>
+              <p>Contorno grosso, cor chapada e preto sólido. Rosas, andorinhas, adagas e serpentes que continuam bonitas com o passar dos anos.</p>
+            </div>
+          </article>
+        </div>
+        <ul class="garantias" aria-label="Como trabalhamos">
+          <li>Agulhas e material descartáveis, abertos na sua frente</li>
+          <li>Desenho ajustado com você antes de começar</li>
+          <li>Orientação de cuidados por escrito no fim da sessão</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FLASH DAY -->
+    <section class="secao secao--tinta" id="flashday" aria-labelledby="flashday-titulo">
+      <div class="secao__in">
+        <header class="secao__cab secao__cab--claro">
+          <p class="sobretitulo">Desenhos prontos, preço fechado</p>
+          <h2 id="flashday-titulo">Flash day</h2>
+          <p class="secao__intro">Próximo flash day: <strong id="flashday-data"></strong>, das 10h às 18h. Cada desenho é feito do jeito que está na folha, com preço fechado. Reserve o seu pelo WhatsApp.</p>
+        </header>
+        <ul class="lista-fd" id="lista-flashday"></ul>
+        <p class="fd__nota">Reserva com sinal de <span class="sinal-valor">R$ 100</span> por Pix, descontado do valor. Cada desenho é feito uma vez por pessoa, no tamanho indicado.</p>
+      </div>
+    </section>
+
+    <!-- ORÇAMENTO -->
+    <section class="secao" id="orcamento" aria-labelledby="orcamento-titulo">
+      <div class="secao__in">
+        <header class="secao__cab">
+          <p class="sobretitulo">Leva um minuto</p>
+          <h2 id="orcamento-titulo">Monte seu orçamento</h2>
+          <p class="secao__intro">Responda o básico e veja na hora uma estimativa. O pedido vai pronto para o WhatsApp do estúdio, e o artista responde com o valor certinho.</p>
+        </header>
+
+        <div class="orc">
+          <form class="ficha" id="form-orcamento" novalidate onsubmit="return false">
+            <div class="campo">
+              <label for="orc-nome"><span class="num">01</span> Seu nome</label>
+              <input id="orc-nome" type="text" autocomplete="given-name" maxlength="40" placeholder="Como podemos te chamar?" aria-describedby="erro-orc-nome">
+              <p class="campo__erro" id="erro-orc-nome" role="alert"></p>
+            </div>
+
+            <fieldset class="campo">
+              <legend><span class="num">02</span> Estilo</legend>
+              <div class="chips" id="orc-estilos"></div>
+              <p class="campo__erro" id="erro-orc-estilo" role="alert"></p>
+            </fieldset>
+
+            <div class="campo">
+              <label for="orc-local"><span class="num">03</span> Local do corpo</label>
+              <select id="orc-local" aria-describedby="erro-orc-local"></select>
+              <p class="campo__erro" id="erro-orc-local" role="alert"></p>
+            </div>
+
+            <div class="campo">
+              <div class="rotulo-linha">
+                <label for="orc-tamanho"><span class="num">04</span> Tamanho aproximado</label>
+                <output id="orc-tamanho-valor" for="orc-tamanho">10 cm</output>
+              </div>
+              <input id="orc-tamanho" type="range" min="3" max="40" step="1" value="10" aria-describedby="orc-tamanho-dica">
+              <div class="regua" aria-hidden="true"><span>3 cm</span><span>20 cm</span><span>40 cm</span></div>
+              <p class="campo__dica" id="orc-tamanho-dica"></p>
+            </div>
+
+            <fieldset class="campo">
+              <legend><span class="num">05</span> Preto ou colorida?</legend>
+              <div class="segs">
+                <label class="seg"><input type="radio" name="cor" value="preto" checked><span>Só preto</span></label>
+                <label class="seg"><input type="radio" name="cor" value="colorida"><span>Colorida</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="campo">
+              <legend><span class="num">06</span> É cobertura ou reforma?</legend>
+              <div class="segs">
+                <label class="seg"><input type="radio" name="cobertura" value="nao" checked><span>Não, pele livre</span></label>
+                <label class="seg"><input type="radio" name="cobertura" value="sim"><span>Sim, cobrir ou reformar</span></label>
+              </div>
+            </fieldset>
+
+            <div class="campo">
+              <label for="orc-artista"><span class="num">07</span> Artista <span class="opcional">(opcional)</span></label>
+              <select id="orc-artista"></select>
+            </div>
+
+            <div class="campo">
+              <label for="orc-ideia"><span class="num">08</span> Sua ideia</label>
+              <textarea id="orc-ideia" rows="3" maxlength="400" placeholder="Ex.: uma andorinha pequena com o nome da minha filha embaixo" aria-describedby="erro-orc-ideia"></textarea>
+              <p class="campo__erro" id="erro-orc-ideia" role="alert"></p>
+            </div>
+
+            <div class="campo">
+              <span class="rotulo"><span class="num">09</span> Foto de referência <span class="opcional">(opcional)</span></span>
+              <label class="arquivo" id="foto-rotulo" tabindex="-1">
+                <input id="orc-foto" type="file" accept="image/*" aria-describedby="foto-aviso">
+                <span class="arquivo__btn">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 8h3l2-3h6l2 3h3v11H4Z"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                  Escolher foto
+                </span>
+              </label>
+              <p class="campo__dica" id="foto-aviso">A foto fica só no seu celular, para você conferir. Depois de enviar o orçamento, mande a foto na conversa do WhatsApp.</p>
+              <div class="previa" id="foto-previa" hidden>
+                <img id="foto-img" alt="Pré-visualização da sua foto de referência">
+                <div>
+                  <p class="previa__nome" id="foto-nome"></p>
+                  <p class="previa__lembrete">Lembre de mandar essa foto no WhatsApp.</p>
+                  <button type="button" class="link" id="foto-remover">Remover foto</button>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <aside class="valor" aria-labelledby="valor-tit">
+            <div class="valor__cartao">
+              <p class="valor__tit" id="valor-tit">Estimativa</p>
+              <p class="valor__a">a partir de</p>
+              <p class="valor__de" id="valor-de" aria-live="polite">R$ 220</p>
+              <p class="valor__faixa" id="valor-faixa"></p>
+              <p class="valor__resumo" id="valor-resumo"></p>
+              <p class="valor__aviso">Valor final confirmado pelo artista, depois de ver a ideia, o local e a referência.</p>
+              <button type="button" class="btn btn--zap" id="btn-orcamento">
+                <svg aria-hidden="true" viewBox="0 0 32 32" width="20" height="20"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3Zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.9-3.9-1.9-6.1C4.9 9.8 9.9 5 16 5s11.1 4.8 11.1 10.8S22.1 26.4 16 26.4Zm6.1-8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.5-.6-.8-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.4-.4-.7-.5Z"/></svg>
+                Enviar orçamento no WhatsApp
+              </button>
+              <div class="orc-ok" id="orc-ok" tabindex="-1" hidden>
+                <p><strong>Mensagem pronta!</strong> É só tocar em enviar no WhatsApp.</p>
+                <p id="orc-ok-foto" hidden>Agora mande a foto de referência na mesma conversa.</p>
+              </div>
+            </div>
+            <details class="regras">
+              <summary>Como a estimativa é calculada?</summary>
+              <p>Usamos o tamanho, o estilo, o local do corpo, a cor e se é cobertura. Peças com muito detalhe, sombra ou ajustes no desenho podem mudar o valor. Nenhuma tatuagem sai por menos de R$ 150.</p>
+            </details>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDA -->
+    <section class="secao secao--papel" id="agenda" aria-labelledby="agenda-titulo">
+      <div class="secao__in">
+        <header class="secao__cab">
+          <p class="sobretitulo">Já sabe o que vai fazer?</p>
+          <h2 id="agenda-titulo">Agende sua sessão</h2>
+          <p class="secao__intro">Escolha o artista, o dia e o horário. O pedido vai pronto para o WhatsApp e o estúdio confirma com você.</p>
+        </header>
+
+        <form class="ficha ficha--agenda" id="form-agenda" novalidate onsubmit="return false">
+          <fieldset class="campo">
+            <legend><span class="num">01</span> Artista</legend>
+            <div class="artistas" id="ag-artistas"></div>
+            <p class="campo__erro" id="erro-ag-artista" role="alert"></p>
+          </fieldset>
+
+          <fieldset class="campo">
+            <legend><span class="num">02</span> Duração da sessão</legend>
+            <div class="segs" id="ag-duracoes"></div>
+          </fieldset>
+
+          <fieldset class="campo">
+            <legend><span class="num">03</span> Dia <span class="opcional">(próximos 14 dias)</span></legend>
+            <div class="dias" id="ag-dias"></div>
+            <p class="campo__erro" id="erro-ag-dia" role="alert"></p>
+          </fieldset>
+
+          <fieldset class="campo">
+            <legend><span class="num">04</span> Horário</legend>
+            <div class="horas" id="ag-horas"></div>
+            <p class="campo__erro" id="erro-ag-hora" role="alert"></p>
+          </fieldset>
+
+          <div class="campo-duplo">
+            <div class="campo">
+              <label for="ag-nome"><span class="num">05</span> Seu nome</label>
+              <input id="ag-nome" type="text" autocomplete="given-name" maxlength="40" placeholder="Seu nome" aria-describedby="erro-ag-nome">
+              <p class="campo__erro" id="erro-ag-nome" role="alert"></p>
+            </div>
+            <div class="campo">
+              <label for="ag-ideia"><span class="num">06</span> O que vai tatuar</label>
+              <input id="ag-ideia" type="text" maxlength="160" placeholder="Ex.: rosa tradicional no antebraço, 10 cm" aria-describedby="erro-ag-ideia">
+              <p class="campo__erro" id="erro-ag-ideia" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="sinal">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7Z"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p><strong>Como funciona o sinal:</strong> para reservar o horário, o estúdio pede um sinal de <span class="sinal-valor">R$ 100</span> por Pix. Ele é descontado do valor da tatuagem. Precisa remarcar? Avise com 48 horas de antecedência e o sinal continua valendo.</p>
+          </div>
+
+          <div class="ag-fim">
+            <div class="ag-resumo" id="ag-resumo" aria-live="polite"></div>
+            <button type="button" class="btn btn--zap" id="btn-agenda">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm4 9 2 2 4-4"/></svg>
+              Pedir horário no WhatsApp
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CUIDADOS + DÚVIDAS -->
+    <section class="secao" id="duvidas" aria-labelledby="duvidas-titulo">
+      <div class="secao__in duas">
+        <div>
+          <header class="secao__cab">
+            <p class="sobretitulo">Depois da sessão</p>
+            <h2 id="cuidados-titulo">Cuidados</h2>
+          </header>
+          <div class="acordeao">
+            <details>
+              <summary>Nas primeiras horas</summary>
+              <p>Tire o plástico no horário que o artista indicar. Lave com água corrente e sabonete neutro, sem esfregar, e seque com papel toalha dando batidinhas.</p>
+            </details>
+            <details>
+              <summary>Pomada e limpeza</summary>
+              <p>Use só a pomada que o artista indicar, numa camada bem fina, de 2 a 3 vezes por dia. Lave as mãos antes de mexer na tatuagem.</p>
+            </details>
+            <details>
+              <summary>O que evitar nos primeiros 15 dias</summary>
+              <p>Sol direto, praia, piscina e sauna. Nada de coçar ou arrancar as casquinhas: deixe sair sozinhas. Aqui em Itapuã o mar chama, mas espera a cicatrização!</p>
+            </details>
+            <details>
+              <summary>Roupa e sono</summary>
+              <p>Prefira roupas leves e limpas, que não fiquem roçando no local. Na primeira noite, se puder, durma sem apoiar o peso em cima da tatuagem.</p>
+            </details>
+            <details>
+              <summary>Quando procurar ajuda</summary>
+              <p>Vermelhidão que aumenta, inchaço forte, febre ou pus: procure um médico e avise o estúdio. Na dúvida, mande uma foto para a gente no WhatsApp.</p>
+            </details>
+          </div>
+        </div>
+
+        <div>
+          <header class="secao__cab">
+            <p class="sobretitulo">Antes de marcar</p>
+            <h2 id="duvidas-titulo">Perguntas frequentes</h2>
+          </header>
+          <div class="acordeao">
+            <details>
+              <summary>Qual a idade mínima?</summary>
+              <p>18 anos completos, com documento oficial com foto no dia da sessão. Não tatuamos menores de idade, nem com autorização dos pais.</p>
+            </details>
+            <details>
+              <summary>Como funciona o sinal?</summary>
+              <p>Para reservar, pedimos <span class="sinal-valor">R$ 100</span> por Pix, que é descontado do valor final. Remarcando com 48 horas de antecedência, o sinal continua valendo. Se faltar sem avisar, o sinal não é devolvido.</p>
+            </details>
+            <details>
+              <summary>Tem retoque?</summary>
+              <p>Se for o caso, o retoque é gratuito em até 30 dias depois da sessão, desde que os cuidados tenham sido seguidos. É só chamar no WhatsApp e marcar.</p>
+            </details>
+            <details>
+              <summary>O que comer e levar no dia?</summary>
+              <p>Faça uma refeição de verdade antes, beba água e durma bem. Evite bebida alcoólica no dia anterior. Leve documento, uma roupa que deixe o local livre, água, um lanchinho e fone de ouvido para sessões longas.</p>
+            </details>
+            <details>
+              <summary>Dói?</summary>
+              <p>Um pouco, sim. Depende do local: costela, pé, mão e pescoço costumam incomodar mais; antebraço, coxa e panturrilha, menos. Você pode pedir pausa sempre que precisar.</p>
+            </details>
+            <details>
+              <summary>Vocês criam um desenho só meu?</summary>
+              <p>Sim. A partir da sua ideia e das referências, o artista monta o desenho e ajusta com você antes de começar. Os desenhos do flash day são os únicos feitos exatamente como estão na folha.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="secao secao--contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="secao__in contato">
+        <div>
+          <p class="sobretitulo">Onde estamos</p>
+          <h2 id="contato-titulo">Passa no estúdio</h2>
+          <address class="endereco">
+            Rua das Gaivotas, 77 · sala 2<br>
+            Itapuã, Vila Velha – ES
+          </address>
+          <div class="contato__acoes">
+            <a class="btn btn--zap" id="zap-contato" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+            <a class="btn btn--linha-claro" id="link-mapa" href="#" target="_blank" rel="noopener">Abrir no mapa</a>
+            <a class="btn btn--linha-claro" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram @nanquim.vv (perfil fictício da demonstração)">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+              @nanquim.vv
+            </a>
+          </div>
+        </div>
+        <div class="horario-card">
+          <h3>Horário</h3>
+          <table class="horario" id="tabela-horario">
+            <caption class="sr">Horário de funcionamento por dia da semana</caption>
+            <tbody>
+              <tr data-dia="1"><th scope="row">Segunda</th><td>10h – 19h</td></tr>
+              <tr data-dia="2"><th scope="row">Terça</th><td>10h – 19h</td></tr>
+              <tr data-dia="3"><th scope="row">Quarta</th><td>10h – 19h</td></tr>
+              <tr data-dia="4"><th scope="row">Quinta</th><td>10h – 19h</td></tr>
+              <tr data-dia="5"><th scope="row">Sexta</th><td>10h – 19h</td></tr>
+              <tr data-dia="6"><th scope="row">Sábado</th><td>10h – 18h</td></tr>
+              <tr data-dia="0"><th scope="row">Domingo</th><td>Fechado</td></tr>
+            </tbody>
+          </table>
+          <p class="horario__nota">Atendimento com hora marcada. Para orçamento, chame no WhatsApp a qualquer hora.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape__in">
+      <p class="rodape__marca">Nanquim</p>
+      <p>Estúdio de Tatuagem · Itapuã, Vila Velha – ES</p>
+      <p class="rodape__mini">Negócio fictício criado para demonstração. Nomes, endereço, artistas e perfil são ilustrativos.</p>
+    </div>
+  </footer>
+
+  <!-- Modal do desenho -->
+  <dialog class="modal" id="modal" aria-labelledby="modal-titulo">
+    <div class="modal__caixa">
+      <button type="button" class="modal__x" data-fechar aria-label="Fechar">✕</button>
+      <div class="modal__arte" id="modal-arte"></div>
+      <div class="modal__txt">
+        <p class="modal__estilo" id="modal-estilo"></p>
+        <h2 class="modal__titulo" id="modal-titulo"></h2>
+        <dl class="modal__dados" id="modal-dados"></dl>
+        <p class="modal__nota">O artista ajusta o desenho ao seu corpo e ao tamanho que você quiser.</p>
+        <div class="modal__acoes">
+          <button type="button" class="btn btn--primario" id="modal-quero">Quero esse</button>
+          <button type="button" class="btn btn--linha" data-fechar>Voltar</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <a class="zap-flutuante" id="zap-flutuante" href="#" target="_blank" rel="noopener" aria-label="Falar com o estúdio no WhatsApp">
+    <svg aria-hidden="true" viewBox="0 0 32 32" width="30" height="30"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3Zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.9-3.9-1.9-6.1C4.9 9.8 9.9 5 16 5s11.1 4.8 11.1 10.8S22.1 26.4 16 26.4Zm6.1-8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.5-.6-.8-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.4-.4-.7-.5Z"/></svg>
+  </a>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+  <script src="../_selo.js" data-demo="Estúdio de tatuagem"></script>
+</body>
+</html>

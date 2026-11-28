@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Volume2, VolumeX, RotateCcw } from 'lucide-react'
+import { Volume2, VolumeX, RotateCcw, Play } from 'lucide-react'
 
 /*
   Vídeo de apresentação da Uridium (feito com HyperFrames).
@@ -70,9 +70,21 @@ export function VideoApresentacao() {
           {mudo && (
             <button
               onClick={ligarSom}
-              className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-zap px-5 py-3 text-sm font-semibold text-espaco shadow-lg transition hover:brightness-110 md:bottom-6 md:left-6"
+              aria-label="Assistir ao vídeo com som"
+              className="group absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-t from-espaco/80 via-espaco/45 to-espaco/30 transition hover:from-espaco/70 hover:via-espaco/30 hover:to-espaco/10 md:gap-4"
             >
-              <Volume2 className="h-4 w-4" /> Assistir com som
+              <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-espaco/70 px-3 py-1 text-xs font-semibold tracking-wide text-texto backdrop-blur md:left-5 md:top-5">
+                <span className="h-2 w-2 rounded-full bg-[#EF4444] motion-safe:animate-pulse" /> Vídeo · 56 s
+              </span>
+              <span className="relative grid h-16 w-16 place-items-center md:h-24 md:w-24">
+                <span className="absolute inset-0 rounded-full bg-[#8B5CF6]/40 motion-safe:animate-ping" />
+                <span className="relative grid h-16 w-16 place-items-center rounded-full bg-gradient-to-br from-[#8B5CF6] to-[#D946EF] shadow-[0_10px_40px_-6px_#8B5CF6] transition group-hover:scale-105 md:h-24 md:w-24">
+                  <Play className="ml-1 h-7 w-7 fill-current text-white md:h-10 md:w-10" />
+                </span>
+              </span>
+              <span className="inline-flex items-center gap-2 rounded-full bg-espaco/75 px-4 py-2 text-sm font-semibold text-texto backdrop-blur md:text-base">
+                <Volume2 className="h-4 w-4" /> Toque para assistir com som
+              </span>
             </button>
           )}
 

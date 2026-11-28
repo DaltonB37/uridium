@@ -179,6 +179,16 @@ export const PROJETOS = [
     prazo: '4 dias úteis',
     itens: ['Catálogo com cores e comparador de modelos', 'Calculadora de economia', 'Test ride e revisão agendados no WhatsApp'],
   },
+  {
+    pasta: 'tatuagem',
+    nicho: 'Estúdios de tatuagem',
+    nome: 'Site com orçamento e agenda',
+    icone: 'PenTool',
+    cor: ['#F87171', '#B91C1C'],
+    preco: 897,
+    prazo: '4 dias úteis',
+    itens: ['Portfólio com filtro por estilo', 'Orçamento guiado com valor estimado', 'Sessão e flash day agendados no WhatsApp'],
+  },
 ]
 
 // ------------------------------------------------------------
